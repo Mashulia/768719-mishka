@@ -1,6 +1,39 @@
-
-@import "opensans.woff";
-@import "opensans.woff2";
-@import "opensansbold.woff";
-@import "opensansbold.woff2";
 @import "normalize.scss";
+@import "main-nav/main-nav.scss";
+@import "site-list/site-list.scss";
+@import "site-list/site-list__link.scss";
+@import "user-list/user-list.scss";
+@import "features/features__list.scss";
+@import "services/services__title.scss";
+@import "services/services__item.scss";
+@import "services/services__list.scss.css";
+@import "visually-hidden/visually-hidden.scss";
+
+
+
+$font-stack: "Open Sans", Arial, sans-serif;
+$primary-color: #444444;
+$secondary-color: #000000;
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $primary-color;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

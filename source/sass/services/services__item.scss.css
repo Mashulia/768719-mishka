@@ -1,0 +1,11 @@
+.services__item {
+  font-size: 19px;
+  color: #ffffff;
+
+  &--left-btn {
+    background-color: #63d1bb;
+  }
+  &--right-btn {
+    background-color: #56c3b2;
+  }
+}
