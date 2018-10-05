@@ -1,7 +1,7 @@
 .promo {
   margin-bottom: 30px;
-
-  border-image: url("../img/bg-zigzag-line.svg") 30 30 round;
+  border: 20px solid transparent;
+  border-image-source: url("../img/bg-zigzag-line.svg");
   border-top:0;
   border-left:0;
   border-right:0;
