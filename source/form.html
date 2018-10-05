@@ -65,7 +65,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__filter">
-            <legend class="form-title">Цвет</legend>
+            <legend class="form__title">Цвет</legend>
             <ul class="form__list">
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox--checked" type="checkbox" name="white" id="white" checked>
@@ -96,7 +96,7 @@
           <div class="form__appointment appointment">
             <ul class="appointment__list">
               <li class="appointment__item">
-                <span class="form-title">ФИО</span>
+                <span class="form__title">ФИО</span>
                 <ul class="appointment__sublist sublist">
                   <li class="sublist__item">
                     <label class="sublist__label form__label" for="name">Имя:</label>
@@ -119,9 +119,9 @@
                 <label class="form__title" for="email">E-mail</label>
                 <input class="appointment__input appointment__input--letter input" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
               </li>
-              <li class="appointment__item">
+              <li class="appointment__item appointment__item--text ">
                 <label class="form__title" for="text">Доп</label>
-                <textarea class="appointment__input input" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу"</textarea>
+                <textarea class="appointment__input appointment__input--text input" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
               </li>
             </ul>
             <p class="appointment__clarification">
