@@ -70,10 +70,15 @@ img {
 @import "main/page-main/catalog/catalog__list.scss";
 @import "main/page-main/catalog/catalog__image.scss";
 @import "main/page-main/catalog/catalog__title.scss";
+@import "main/page-main/catalog/title-catalog.scss";
 @import "main/page-main/catalog/catalog__description.scss";
 @import "main/page-main/catalog/catalog__price.scss";
-@import "main/page-main/catalog/catalog-item.scss";
+@import "main/page-main/catalog/catalog__info.scss";
 @import "main/page-main/catalog/catalog__item.scss";
+@import "main/page-main/video-preview/video-preview.scss";
+@import "main/page-main/video-preview/video-preview__title.scss";
+@import "main/page-main/video-preview/video-preview__resource.scss";
+@import "main/page-main/video-preview/video-preview__description.scss";
 @import "page-footer/page-footer.scss";
 @import "page-footer/social__list.scss";
 @import "page-footer/copyright__text.scss";
