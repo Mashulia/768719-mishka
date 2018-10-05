@@ -1,19 +1,5 @@
-@import "normalize.scss";
-@import "main-nav/main-nav.scss";
-@import "site-list/site-list.scss";
-@import "site-list/site-list__link.scss";
-@import "user-list/user-list.scss";
-@import "features/features__list.scss";
-@import "services/services__title.scss";
-@import "services/services__item.scss";
-@import "services/services__list.scss.css";
-@import "visually-hidden/visually-hidden.scss";
-
-
-
 $font-stack: "Open Sans", Arial, sans-serif;
-$primary-color: #444444;
-$secondary-color: #000000;
+$pretty-color: #63d1bb;
 
 
 body {
@@ -23,8 +9,8 @@ body {
   font-family: $font-stack;
   font-size: 15px;
   line-height: 24px;
-  font-weight: normal;
-  color: $primary-color;
+  font-weight: bold;
+  color: #444444;
 
   background-color: #ffffff;
 }
@@ -37,3 +23,58 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@import "normalize.scss";
+@import "main/button/button.scss";
+@import "main/visually-hidden/visually-hidden.scss";
+@import "page-header/page-header.scss";
+@import "page-header/page-header__logo-image.scss";
+@import "page-header/main-nav/main-nav.scss";
+@import "page-header/site-list/site-list.scss";
+@import "page-header/site-list/site-list__link.scss";
+@import "page-header/user-list/user-list.scss";
+@import "main/main.index/services/services__title.scss";
+@import "main/main.index/services/services__item.scss";
+@import "main/main.index/services/services__list.scss";
+@import "main/main.index/services/services__link.scss";
+@import "main/main.index/services/services.scss";
+@import "main/container/container-title.scss";
+@import "main/main.index/promo/promo.scss";
+@import "main/main.index/promo/promo__title.scss";
+@import "main/main.index/promo/promo__offer.scss";
+@import "main/main.index/promo/promo__price.scss";
+@import "main/main.index/promo/promo__list.scss";
+@import "main/main.index/promo/promo__description.scss";
+@import "main/main.index/promo/promo__item.scss";
+@import "main/main.index/promo/promo__option.scss";
+@import "main/main.index/promo/promo__image.scss";
+@import "main/main.index/promo/promo__bottom.scss";
+@import "main/main.index/features/features.scss";
+@import "main/main.index/features/features__title.scss";
+@import "main/main.index/features/features__list.scss";
+@import "main/main.index/reviews/reviews.scss";
+@import "main/main.index/reviews/reviews__title.scss";
+@import "main/main.index/reviews/reviews__list.scss";
+@import "main/main.index/reviews/reviews__text.scss";
+@import "main/main.index/reviews/reviews__author-name.scss";
+@import "main/main.index/reviews/reviews__author-email.scss";
+@import "main/main.index/reviews/reviews__switch.scss";
+@import "main/main.index/reviews/reviews__item.scss";
+@import "main/main.index/reviews/reviews__button.scss";
+@import "main/main.index/contacts/contacts.scss";
+@import "main/main.index/contacts/contacts__title.scss";
+@import "main/main.index/contacts/contacts__list.scss";
+@import "main/main.index/contacts/contacts__item.scss";
+@import "main/main.index/contacts/contacts__link.scss";
+@import "main/main.index/contacts/contacts__map.scss";
+@import "main/main.index/contacts/contacts__img.scss";
+@import "page-footer/page-footer.scss";
+@import "page-footer/social__list.scss";
+@import "page-footer/copyright__text.scss";
+
+
+
+
+
+
+
