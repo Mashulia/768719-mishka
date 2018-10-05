@@ -1,9 +1,11 @@
 .site-list__link {
   color: #000000;
+
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }

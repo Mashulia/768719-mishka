@@ -1,4 +1,4 @@
-$font-stack: "Open Sans", Arial, sans-serif;
+$font-stack: "Open Sans", arial, sans-serif;
 $pretty-color: #63d1bb;
 
 
@@ -24,10 +24,8 @@ img {
   height: auto;
 }
 
-@import "normalize.scss";
 @import "main/button/button.scss";
 @import "main/visually-hidden/visually-hidden.scss";
-@import "page-header/page-header.scss";
 @import "page-header/page-header__logo-image.scss";
 @import "page-header/main-nav/main-nav.scss";
 @import "page-header/site-list/site-list.scss";
@@ -68,6 +66,7 @@ img {
 @import "main/main.index/contacts/contacts__link.scss";
 @import "main/main.index/contacts/contacts__map.scss";
 @import "main/main.index/contacts/contacts__img.scss";
+@import "main/page-main/page-main__title.scss";
 @import "page-footer/page-footer.scss";
 @import "page-footer/social__list.scss";
 @import "page-footer/copyright__text.scss";
