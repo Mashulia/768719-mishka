@@ -1,7 +1,6 @@
 .order-form__filter-list {
 
   @include reset-list();
-  
   &--option {
     margin-bottom: 10px;
     padding-left: 60px;
