@@ -4,11 +4,13 @@
 @import "main/container/container.scss";
 @import "main/button/button.scss";
 @import "main/visually-hidden/visually-hidden.scss";
+@import "page-header/page-header__wrapper.scss";
 @import "page-header/page-header__logo-image.scss";
 @import "page-header/main-nav/main-nav.scss";
 @import "page-header/site-list/site-list.scss";
-@import "page-header/site-list/site-list__link.scss";
+@import "page-header/site-list/site-list__item.scss";
 @import "page-header/user-list/user-list.scss";
+@import "page-header/user-list/user-list__item.scss";
 @import "main/main.index/services/services__title.scss";
 @import "main/main.index/services/services__item.scss";
 @import "main/main.index/services/services__list.scss";

@@ -1,10 +1,7 @@
-.site-list {
-  @include reset-list;
-
-  &--item {
-    padding: 30px 0 30px 45px;
-    border-bottom: 1px solid #ececec;
-  }
+.user-list__item {
+  padding: 30px 0 30px 45px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
 
   &--link {
     color: #000000;
@@ -19,4 +16,3 @@
     }
   }
 }
-

@@ -4,8 +4,8 @@
   border: none;
 
   &--title {
-    display: block;
     @include reset-indents();
+    display: block;
     margin-bottom: 30px;
     padding-right: 20px;
     font-size: 17px;
