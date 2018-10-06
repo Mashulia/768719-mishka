@@ -1,0 +1,4 @@
+.order-form__appointment-list {
+  @include reset-list();
+  margin-bottom: 20px;
+}

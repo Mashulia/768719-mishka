@@ -1,20 +1,4 @@
-.form__appointment {
-  &--list {
-    @include reset-list();
-    margin-bottom: 20px;
-  }
-
-  &--item {
-    margin-bottom: 30px;
-  }
-
-  &--sublist {
-    @include reset-list();
-
-    &--item {
-      margin-bottom: 30px;
-    }
-  }
+.order-form__appointment {
 
   &--input {
     box-sizing: border-box;
