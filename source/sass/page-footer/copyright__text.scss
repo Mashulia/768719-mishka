@@ -1,6 +1,5 @@
 .copyright__text {
-  margin: 0;
-  padding: 0;
+  @include reset-indents();
   font-size: 19px;
   line-height: 18px;
   color: #000000;

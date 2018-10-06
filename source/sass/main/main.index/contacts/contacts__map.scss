@@ -1,5 +1,4 @@
 .contacts__map {
-  margin: 0;
+  @include reset-indents();
   margin-bottom: 40px;
-  padding: 0;
 }
