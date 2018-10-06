@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "global-styles.scss";
 @import "main/button/button.scss";
 @import "main/visually-hidden/visually-hidden.scss";
@@ -55,11 +56,8 @@
 @import "main/page-main/video-preview/video-preview__title.scss";
 @import "main/page-main/video-preview/video-preview__resource.scss";
 @import "main/page-main/video-preview/video-preview__description.scss";
-@import "main/page-main/description/description__text.scss";
+@import "main/page-main/form/form__slogan.scss";
 @import "main/page-main/form/form__filter.scss";
-@import "main/page-main/form/form__title.scss";
-@import "main/page-main/form/form__list.scss";
-@import "main/page-main/form/form__label.scss";
 @import "main/page-main/appointment/appointment__sublist.scss";
 @import "main/page-main/appointment/appointment__list.scss";
 @import "main/page-main/appointment/appointment__item.scss";

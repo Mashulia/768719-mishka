@@ -1,6 +1,30 @@
 .form__filter {
-  margin: 0;
-  padding: 0;
+  @include reset-indents();
   margin-bottom: 30px;
   border: none;
+
+  &--title {
+    display: block;
+    @include reset-indents();
+    margin-bottom: 30px;
+    padding-right: 20px;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $pretty-color;
+  }
+
+  &--list {
+    @include reset-list();
+  }
+
+  &--option {
+    margin-bottom: 10px;
+  }
+
+  &--label {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+  }
 }
