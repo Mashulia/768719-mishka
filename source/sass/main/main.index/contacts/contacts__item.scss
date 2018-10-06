@@ -1,4 +1,8 @@
 .contacts__item {
+  vertical-align: top;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   &--first-column {
     width: 80px;
   }

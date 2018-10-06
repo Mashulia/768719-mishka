@@ -5,6 +5,7 @@
 @import "main/button/button.scss";
 @import "main/visually-hidden/visually-hidden.scss";
 @import "page-header/page-header__wrapper.scss";
+@import "page-header/page-header__logo.scss";
 @import "page-header/page-header__logo-image.scss";
 @import "page-header/main-nav/main-nav.scss";
 @import "page-header/site-list/site-list.scss";
@@ -28,7 +29,7 @@
 @import "main/main.index/promo/promo__image.scss";
 @import "main/main.index/promo/promo__bottom.scss";
 @import "main/main.index/features/features.scss";
-@import "main/main.index/features/features__title.scss";
+@import "main/main.index/features/features__item.scss";
 @import "main/main.index/features/features__list.scss";
 @import "main/main.index/reviews/reviews.scss";
 @import "main/main.index/reviews/reviews__title.scss";
@@ -46,6 +47,7 @@
 @import "main/main.index/contacts/contacts__link.scss";
 @import "main/main.index/contacts/contacts__map.scss";
 @import "main/main.index/contacts/contacts__img.scss";
+@import "main/main.index/contacts/contacts__button.scss";
 @import "main/page-main/page-main__title.scss";
 @import "main/page-main/catalog/catalog__list.scss";
 @import "main/page-main/catalog/catalog__image.scss";

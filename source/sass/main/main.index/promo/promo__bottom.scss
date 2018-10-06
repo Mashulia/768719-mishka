@@ -1,4 +1,6 @@
 .promo__bottom {
   @include reset-indents();
-  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
