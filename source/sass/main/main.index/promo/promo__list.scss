@@ -4,4 +4,14 @@
   line-height: 20px;
   font-weight: normal;
   border-collapse: collapse;
+
+  &--option {
+    width: 95px;
+  }
+
+  &--item {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ececec;
+  }
 }

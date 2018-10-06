@@ -3,4 +3,30 @@
   width: 100%;
   line-height: 30px;
   font-weight: normal;
+
+  &--item {
+    vertical-align: top;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--first-column {
+      width: 80px;
+    }
+  }
+
+    &--link {
+    font: inherit;
+    color: inherit;
+    border-bottom: 2px solid $pretty-color;
+
+    &:hover,
+    &:focus {
+      color: #46c1ae;
+    }
+
+    &:active {
+      color: rgba(70, 193, 174, 0.3);
+      border-color: rgba(70, 193, 174, 0.3);
+    }
+  }
 }
