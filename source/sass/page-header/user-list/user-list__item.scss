@@ -1,0 +1,17 @@
+.user-list__item {
+  padding: 30px 0 30px 75px;
+  border-bottom: 1px solid #ececec;
+
+  &--link {
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

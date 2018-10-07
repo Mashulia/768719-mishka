@@ -1,0 +1,12 @@
+.catalog__title {
+  margin-bottom: 15px;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

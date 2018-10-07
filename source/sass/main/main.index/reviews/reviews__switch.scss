@@ -1,0 +1,13 @@
+.reviews__switch {
+  @include reset-indents();
+  display: flex;
+  margin-bottom: 40px;
+
+  &--left,
+  &--right {
+    width: 130px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    padding: 10px 40px;
+  }
+}

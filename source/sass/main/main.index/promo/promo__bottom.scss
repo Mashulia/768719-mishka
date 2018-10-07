@@ -1,0 +1,12 @@
+.promo__bottom {
+  @include reset-indents();
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+
+  &--price {
+    margin-bottom: 25px;
+    font-size: 17px;
+    text-align: center;
+  }
+}

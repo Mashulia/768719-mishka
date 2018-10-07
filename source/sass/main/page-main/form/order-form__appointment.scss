@@ -1,0 +1,42 @@
+.order-form__appointment {
+  &--input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: inherit;
+    font-weight: normal;
+    color: rgba(68, 68, 68, 0.3);
+    border: none;
+    border-bottom: 2px solid #000000;
+
+    &--text {
+      border: 2px solid #000000;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $pretty-color;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $pretty-color;
+    }
+
+    &:active {
+      color: #444444;
+    }
+  }
+
+  &--clarification {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    &--star {
+      top: -2px;
+    }
+  }
+}

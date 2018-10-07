@@ -1,0 +1,29 @@
+.reviews__list {
+  @include reset-list();
+
+  &--item {
+    margin-bottom: 35px;
+  }
+
+  &--reviews__text {
+    @include reset-indents();
+    margin-bottom: 25px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  &--author-name {
+    font-size: 17px;
+    font-style: normal;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+
+  &--author-email {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 35px;
+  }
+}
