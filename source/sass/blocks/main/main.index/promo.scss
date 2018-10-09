@@ -39,10 +39,14 @@
   }
 }
 
+.promo__right-column {
+  margin: 0;
+  padding: 0;
+}
+
 .promo__image {
-  width: 260px;
-  height: 315px;
-  margin-bottom: 20px;
+  width: 333px;
+  height: 404px;
 }
 
 .promo__bottom {
@@ -61,6 +65,33 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding: 50px;
+  }
+
+  .promo__wrapper-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__offer {
+    width: 125px;
+    text-align: center;
+  }
+
+  .promo__title {
+    width: 440px;
+  }
+
+  .promo__wrapper-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__left-column {
+    width: 290px;
+  }
+
+  .promo__right-column {
+    width: 334px;
   }
 }
 
