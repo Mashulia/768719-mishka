@@ -26,6 +26,7 @@
 .services__item {
   font-size: 19px;
   color: #ffffff;
+  padding: 30px;
 
   &--left-btn {
     background-color: $pretty-color;
@@ -36,9 +37,6 @@
   }
 
   &--link {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
     font-size: inherit;
     color: inherit;
 
@@ -48,17 +46,25 @@
   }
 }
 
-.services__item--link--left-btn:hover,
-.services__item--link--left-btn:focus {
+.services__item--left-btn:hover,
+.services__item--left-btn:focus {
   background-color: #59d5bc;
+  transform: scale(1.1);
 }
 
-.services__item--link--right-btn:hover,
-.services__item--link--right-btn:focus,
-.services__item--link--right-btn:active {
+.services__item--right-btn:hover,
+.services__item--right-btn:focus,
+.services__item--right-btn:active {
   background-color: #46c1ae;
+  transform: scale(1.05);
 }
 
+.services__item--left-btn:hover .services__item--link,
+.services__item--left-btn:focus .services__item--link,
+.services__item--right-btn:hover .services__item--link,
+.services__item--right-btn:focus .services__item--link {
+  transform: translateY(-5px);
+}
 
 @media (min-width: $tablet-width) {
   .services {
@@ -77,11 +83,13 @@
 
   .services__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .services__item {
-    width: 50%;
+    width: 334px;
+    padding: 35px;
   }
 }
 
@@ -107,6 +115,7 @@
   }
 
   .services__item {
-    width: 50%;
+    width: 525px;
+    padding: 35px;
   }
 }
