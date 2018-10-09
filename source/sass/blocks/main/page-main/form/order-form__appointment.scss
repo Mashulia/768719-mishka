@@ -1,0 +1,107 @@
+.order-form__appointment {
+  &--input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: inherit;
+    font-weight: normal;
+    color: rgba(68, 68, 68, 0.3);
+    border: none;
+    border-bottom: 2px solid #000000;
+
+    &--text {
+      border: 2px solid #000000;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $pretty-color;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $pretty-color;
+    }
+
+    &:active {
+      color: #444444;
+    }
+  }
+
+  &--clarification {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    &--star {
+      top: -2px;
+    }
+  }
+}
+
+.order-form__appointment-list {
+  @include reset-list();
+  margin-bottom: 20px;
+}
+
+.order-form__appointment-sublist {
+  @include reset-list();
+}
+
+.order-form__appointment-item {
+  margin-bottom: 30px;
+}
+
+.order-form__appointment-label {
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.order-form__appointment-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: inherit;
+  font-weight: normal;
+  color: rgba(68, 68, 68, 0.3);
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &--text {
+    border: 2px solid #000000;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $pretty-color;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $pretty-color;
+  }
+
+  &:active {
+    color: #444444;
+  }
+}
+
+.order-form__appointment-count {
+  margin-bottom: 30px;
+}
+
+.order-form__appointment-clarification {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+
+  &--star {
+    top: -2px;
+  }
+}
