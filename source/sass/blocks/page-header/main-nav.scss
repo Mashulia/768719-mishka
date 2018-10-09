@@ -23,7 +23,7 @@
 .main-nav__button {
   font-size: 0;
   border: none;
-  background: url(../img/icon-menu-close.svg) center no-repeat;
+  background: url("../img/icon-menu-close.svg") center no-repeat;
   width: 21px;
   height: 20px;
   margin-left: auto;
@@ -40,14 +40,14 @@
   display: none;
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .main-nav__wrapper  {
+  .main-nav__wrapper {
     width: 167px;
     order: -3;
   }
@@ -67,7 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper  {
+  .main-nav__wrapper {
     width: 167px;
     order: -2;
   }

@@ -12,14 +12,14 @@
   padding-left: 45px;
   color: #000000;
 
-    &:hover,
-    &:focus {
-      color: rgba(0, 0, 0, 0.6);
-    }
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .user-list__item-search,

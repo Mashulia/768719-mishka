@@ -1,10 +1,5 @@
 .promo {
-  margin-bottom: 25px;
-  border: 20px solid transparent;
-  border-image-source: url("../img/bg-zigzag-line.svg");
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  padding: 30px;
 }
 
 .promo__title {
@@ -60,5 +55,17 @@
     margin-bottom: 25px;
     font-size: 17px;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 70px 50px;
   }
 }

@@ -12,21 +12,19 @@
   }
 }
 
-  .site-list__item-link {
-    padding-left: 45px;
-    color: #000000;
+.site-list__item-link {
+  padding-left: 45px;
+  color: #000000;
 
-    &:hover,
-    &:focus {
-      color: rgba(0, 0, 0, 0.6);
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
   }
 
-
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
 
 @media (min-width: $tablet-width) {
   .site-list {
