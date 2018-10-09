@@ -33,3 +33,15 @@
 .services__item--link--right-btn:active {
   background-color: #46c1ae;
 }
+
+@media (min-width: $tablet-width) {
+  .services__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__item {
+    width: 50%;
+  }
+}

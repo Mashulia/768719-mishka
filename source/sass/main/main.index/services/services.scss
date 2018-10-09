@@ -1,3 +1,15 @@
 .services {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .services {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    padding: 0 50px;
+  }
+}
