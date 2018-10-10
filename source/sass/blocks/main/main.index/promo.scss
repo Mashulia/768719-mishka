@@ -15,6 +15,7 @@
   text-transform: uppercase;
 
   &--description {
+
     @include reset-indents();
     margin-bottom: 20px;
     font-weight: normal;
@@ -42,11 +43,16 @@
 .promo__right-column {
   margin: 0;
   padding: 0;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .promo__image {
-  width: 333px;
-  height: 404px;
+  width: 260px;
+  height: 315px;
 }
 
 .promo__bottom {
@@ -70,15 +76,29 @@
   .promo__wrapper-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
   .promo__offer {
     width: 125px;
+    line-height: 17px;
     text-align: center;
+    margin-bottom: 0;
+
+    &--description {
+      margin-bottom: 55px;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 
   .promo__title {
     width: 440px;
+  }
+
+  .promo__list {
+    margin-bottom: 60px;
   }
 
   .promo__wrapper-body {
@@ -90,13 +110,105 @@
     width: 290px;
   }
 
+  .promo__right {
+    width: 333px;
+  }
+
   .promo__right-column {
-    width: 334px;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop,
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .promo__image {
+    width: 333px;
+    height: 404px;
+  }
+
+  .promo__price {
+    margin-bottom: 30px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 70px 50px;
+    padding: 130px 50px;
+  }
+
+  .promo__wrapper-header {
+    position: relative;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  .promo__offer {
+    margin-bottom: 0;
+    margin-left: 45px;
+    margin-right: 55px;
+    width: 75px;
+    line-height: 17px;
+    text-align: center;
+
+    &--description {
+      margin-bottom: 60px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
+  .promo__title {
+    width: 875px;
+    order: 2;
+  }
+
+  .promo__list {
+    margin-bottom: 110px;
+  }
+
+  .promo__wrapper-body {
+    display: flex;
+  }
+
+  .promo__left-column {
+    width: 290px;
+    margin-left: 175px;
+    margin-right: 60px;
+  }
+
+  .promo__right {
+    width: 525px;
+  }
+
+  .promo__right-column {
+
+    &--tablet,
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .promo__image {
+    width: 525px;
+    height: 636px;
+    margin-top: -170px;
+  }
+
+  .promo__price {
+    margin-bottom: 35px;
+    font-size: 20px;
   }
 }

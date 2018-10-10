@@ -1,12 +1,12 @@
 .container {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
 }
 
 
 @media (min-width: $tablet-width) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
