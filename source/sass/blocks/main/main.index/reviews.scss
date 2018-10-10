@@ -60,3 +60,20 @@
   display: block;
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+
+  }
+  .reviews__wrapper {
+    padding: 30px 50px 70px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding: 30px 50px 65px 50px;
+  }
+}

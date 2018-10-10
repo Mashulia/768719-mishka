@@ -15,7 +15,6 @@
   text-transform: uppercase;
 
   &--description {
-
     @include reset-indents();
     margin-bottom: 20px;
     font-weight: normal;
@@ -115,7 +114,6 @@
   }
 
   .promo__right-column {
-
     &--tablet {
       display: block;
     }
@@ -190,7 +188,6 @@
   }
 
   .promo__right-column {
-
     &--tablet,
     &--mobile {
       display: none;
