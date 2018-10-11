@@ -63,65 +63,69 @@
 
       <main class="page-main">
 
-        <h1 class="page-main__title">Вязание на заказ</h1>
+        <h1 class="page-main__title form-title">Вязание на заказ</h1>
 
         <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="order-form__description">
-            <p class="order-form__description-slogan">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-            </p>
-          <fieldset class="order-form__filter order-form__filter--type">
-            <div class="order-form__filter-name">
-              <span class="order-form__filter-title">Тип</span>
-              <span class="order-form__filter-line"></span>
+            <div class="order-form__description">
+              <p class="order-form__description-slogan">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+              </p>
             </div>
-              <ul class="order-form__filter-list">
-                <li class="order-form__filter-option">
-                  <input class="visually-hidden order-form__filter-input order-form__filter-input--radio order-form__filter-input--radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
-                  <label class="order-form__filter-label" for="decoration">Аксессуар для интерьера</label>
+            <fieldset class="order-form__filter order-form__filter--type">
+              <div class="order-form__wrapper">
+                <div class="order-form__filter-name">
+                  <span class="order-form__filter-title">Тип</span>
+                  <span class="order-form__filter-line"></span>
+                </div>
+                <ul class="order-form__filter-list">
+                  <li class="order-form__filter-option">
+                    <input class="visually-hidden order-form__filter-input order-form__filter-input--radio order-form__filter-input--radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
+                    <label class="order-form__filter-label" for="decoration">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="order-form__filter-option">
+                    <input class="visually-hidden order-form__filter-input order-form__filter-input--radio" type="radio" name="type-product" value="toy" id="toy">
+                    <label class="order-form__filter-label" for="toy">Детская игрушка</label>
+                  </li>
+                </ul>
+              </div>
+          </fieldset>
+          <fieldset class="order-form__filter order-form__filter--color">
+            <div class="order-form__wrapper">
+              <div class="order-form__filter-name">
+                <span class="order-form__filter-title">Цвет</span>
+                <span class="order-form__filter-line"></span>
+              </div>
+              <ul class="order-form__filter-list order-form__filter-list--color">
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="white" id="white" checked>
+                  <label class="order-form__filter-label" for="white">Белый</label>
                 </li>
-                <li class="order-form__filter-option">
-                  <input class="visually-hidden order-form__filter-input order-form__filter-input--radio" type="radio" name="type-product" value="toy" id="toy">
-                  <label class="order-form__filter-label" for="toy">Детская игрушка</label>
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="gray" id="gray" checked>
+                  <label class="order-form__filter-label" for="gray">Серый</label>
+                </li>
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="tiffany" id="tiffany">
+                  <label class="order-form__filter-label" for="tiffany">«Тиффани»</label>
+                </li>
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="black" id="black">
+                  <label class="order-form__filter-label" for="black">Черный</label>
+                </li>
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="pink" id="pink">
+                  <label class="order-form__filter-label" for="pink">Розовый</label>
+                </li>
+                <li class="order-form__filter-option order-form__filter-option--color">
+                  <input class="visually-hidden form__filter--input form__filter--checkbox" type="checkbox" name="orange" id="orange">
+                  <label class="order-form__filter-label" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </div>
-          </fieldset>
-          <fieldset class="order-form__filter order-form__filter--color">
-            <div class="order-form__filter-name">
-              <span class="order-form__filter-title">Цвет</span>
-              <span class="order-form__filter-line"></span>
-            </div>
-            <ul class="order-form__filter-list">
-              <li class="order-form__filter-option">
-                <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="white" id="white" checked>
-                <label class="order-form__filter-label" for="white">Белый</label>
-              </li>
-              <li class="order-form__filter-option">
-                <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="gray" id="gray" checked>
-                <label class="order-form__filter-label" for="gray">Серый</label>
-              </li>
-              <li class="order-form__filter-option">
-                <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="tiffany" id="tiffany">
-                <label class="order-form__filter-label" for="tiffany">«Тиффани»</label>
-              </li>
-              <li class="order-form__filter-option">
-                <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="black" id="black">
-                <label class="order-form__filter-label" for="black">Черный</label>
-              </li>
-              <li class="order-form__filter-option">
-                <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="pink" id="pink">
-                <label class="order-form__filter-label" for="pink">Розовый</label>
-              </li>
-              <li class="order-form__filter-option">
-                <input class="visually-hidden form__filter--input form__filter--checkbox" type="checkbox" name="orange" id="orange">
-                <label class="order-form__filter-label" for="orange">Оранжевый</label>
-              </li>
-            </ul>
             </fieldset>
             <div class="order-form__appointment">
               <ul class="order-form__appointment-list">
-                <li class="order-form__appointment-item">
+                <li class="order-form__appointment-item order-form__appointment-item--sublist">
                   <div class="order-form__filter-name">
                     <span class="order-form__filter-title">ФИО</span>
                     <span class="order-form__filter-line"></span>
@@ -140,21 +144,25 @@
                       <input class="order-form__appointment-input order-form__input" id="middle-name" type="text" name="middle-name" value="" placeholder="Отчество, если желаете*">
                     </li>
                   </ul>
-                <li class="order-form__appointment-item">
-                  <div class="order-form__filter-name">
-                    <label class="order-form__filter-title" for="tel">Тел</label>
-                    <span class="order-form__filter-line"></span>
+                <li class="order-form__appointment-item order-form__appointment-item--contacts">
+                  <div class="order-form__appointment-wrapper">
+                    <div class="order-form__filter-name">
+                      <label class="order-form__filter-title" for="tel">Тел</label>
+                      <span class="order-form__filter-line"></span>
+                    </div>
+                    <input class="order-form__appointment-input order-form__input order-form__input--tel" id="tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
                   </div>
-                  <input class="order-form__appointment-input order-form__input order-form__input--tel" id="tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
                 </li>
-                <li class="order-form__appointment-item">
-                  <div class="order-form__filter-name">
-                    <label class="order-form__filter-title" for="email">E-mail</label>
-                    <span class="order-form__filter-line"></span>
+                <li class="order-form__appointment-item order-form__appointment-item--contacts">
+                  <div class="order-form__appointment-wrapper">
+                    <div class="order-form__filter-name">
+                      <label class="order-form__filter-title" for="email">E-mail</label>
+                      <span class="order-form__filter-line"></span>
+                    </div>
+                    <input class="order-form__appointment-input order-form__input order-form__input--letter" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
                   </div>
-                  <input class="order-form__appointment-input order-form__input order-form__input--letter" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
                 </li>
-                <li class="order-form__appointment-item">
+                <li class="order-form__appointment-item order-form__appointment-item--text">
                   <div class="order-form__filter-name">
                     <label class="order-form__filter-title" for="text">Доп</label>
                     <span class="order-form__filter-line"></span>
@@ -162,16 +170,17 @@
                   <textarea class="order-form__appointment-input order-form__input order-form__appointment-input--text" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
                 </li>
               </ul>
-              <p class="order-form__appointment-clarification">
-              <sup class="order-form__appointment-clarification--star">*</sup>Поля обязательны для заполнения</p>
             </div>
-            <button class="order-form__button button" type="submit">Отправить заказ</button>
+            <div class="order-form__appointment-clarification">
+              <b class="order-form__appointment-clarification-text">*Поля обязательны для заполнения</b>
+              <button class="order-form__button button" type="submit">Отправить заказ</button>
+            </div>
           </form>
         </section>
       </main>
 
       <footer class="page-footer">
-         <div class="page-footer__wrapper">
+        <div class="page-footer__wrapper">
           <div class="page-footer__logo">
             <img src="../img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
           </div>

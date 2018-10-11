@@ -34,3 +34,67 @@
   line-height: 18px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__filter {
+    &--color {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order-form__filter-title {
+    width: 167px;
+  }
+
+  .order-form__filter-name {
+    width: 167px;
+  }
+
+  .order-form__filter-list {
+    width: 500px;
+    margin-right: auto;
+
+    &--color {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    padding: 50px;
+  }
+
+  .order-form__filter-option {
+    margin-bottom: 25px;
+    width: 239px;
+  }
+
+  .order-form__filter-label {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    margin-bottom: 130px;
+  }
+
+  .order-form__filter-title {
+    width: 175px;
+  }
+
+  .order-form__filter-list {
+    width: 875px;
+  }
+
+  .order-form__filter-option {
+    width: 350px;
+
+    &--color {
+      width: 205px;
+      margn-left: 60px;
+    }
+  }
+}

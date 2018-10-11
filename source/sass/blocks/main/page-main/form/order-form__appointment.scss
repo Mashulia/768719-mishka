@@ -63,8 +63,8 @@
 .order-form__appointment-input {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font: inherit;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3);
@@ -95,13 +95,81 @@
   margin-bottom: 30px;
 }
 
-.order-form__appointment-clarification {
+.order-form__appointment-clarification
+
+  &--text {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
+}
 
-  &--star {
-    top: -2px;
+@media (min-width: $tablet-width) {
+  .order-form__appointment-item {
+    margin-bottom: 0;
+
+    &--sublist,
+    &--text {
+      padding: 65px 50px 50px 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &--contacts {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order-form__appointment-wrapper {
+    padding: 50px;
+    display: flex;
+  }
+
+  .order-form__input {
+    &--tel,
+    &--letter {
+      background-color: inherit;
+    }
+  }
+
+  .order-form__appointment-sublist {
+    width: 500px;
+  }
+
+  .order-form__appointment-count {
+    display: flex;
+  }
+
+  .order-form__appointment-label {
+    margin-right: 20px;
+  }
+
+  .order-form__appointment-clarification {
+    display: flex;
+    justify-content: space-between;
+
+    &--text {
+      width: 335px;
+      text-align: left;
+    }
+  }
+
+  .order-form__button {
+    order: -1;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    margin-bottom: 130px;
+  }
+
+  .order-form__appointment-sublist {
+    width: 700px;
+  }
+
+  .order-form__appointment-label {
+    margin-right: 25px;
   }
 }
