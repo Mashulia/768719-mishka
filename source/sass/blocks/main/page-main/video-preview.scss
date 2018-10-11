@@ -37,8 +37,10 @@
 
 @media (min-width: $tablet-width) {
   .video-preview {
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
+
   }
 
   .video-preview__resource {
@@ -56,18 +58,45 @@
   .video-preview__title {
     width: 250px;
     padding-left: 105px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .video-preview__description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video-preview__resource {
     &--desktop {
-      display: none;
+      order: -1;
+      display: block;
     }
 
     &--mobile,
     &--tablet {
       display: none;
     }
+  }
+
+  .video-preview {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .video-preview__title {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    text-align: left;
+  }
+
+  .video-preview__description {
+    padding-top: 95px;
+    width: 350px;
   }
 }
