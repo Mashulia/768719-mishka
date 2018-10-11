@@ -21,14 +21,14 @@
 }
 
 .contacts__list-item {
-    vertical-align: top;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    &--first-column {
-      width: 80px;
-    }
+  &--first-column {
+    width: 80px;
   }
+}
 
 .contacts__list-link {
   font: inherit;
@@ -82,7 +82,6 @@
   }
 
   .contacts__list-item {
-
     &--first-column {
       width: 75px;
     }

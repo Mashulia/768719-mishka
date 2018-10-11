@@ -31,12 +31,10 @@
 
 @media (min-width: $desktop-width) {
   .promo-list {
-    display: block;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: left;
-
   }
 
   .promo-list__item {

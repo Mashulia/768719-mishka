@@ -95,13 +95,13 @@
   margin-bottom: 30px;
 }
 
-.order-form__appointment-clarification
-
+.order-form__appointment-clarification {
   &--text {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+  }
 }
 
 @media (min-width: $tablet-width) {

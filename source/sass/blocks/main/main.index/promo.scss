@@ -30,8 +30,8 @@
 }
 
 .promo__list-option {
-    width: 95px;
-  }
+  width: 95px;
+}
 
 .promo__list-item {
   padding-top: 9px;
@@ -87,10 +87,10 @@
   }
 
   .promo__offer-description {
-      margin-bottom: 55px;
-      font-size: 17px;
-      line-height: 30px;
-    }
+    margin-bottom: 55px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 
   .promo__title {
     width: 440px;
@@ -145,6 +145,7 @@
   }
 
   .promo__wrapper-header {
+    position: relative;
     width: 750px;
     margin-bottom: 65px;
   }
@@ -156,12 +157,6 @@
     width: 75px;
     line-height: 17px;
     text-align: center;
-  }
-
-  .promo__offer  {
-    margin-bottom: 60px;
-    font-size: 17px;
-    line-height: 30px;
   }
 
   .promo__title {

@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   @include reset-list();
   padding: 25px 55px;
   border-bottom: 2px solid #ececec;

@@ -92,18 +92,18 @@
   }
 
   .main-nav__logo-image {
-  width: 149px;
-  height: 72px;
+    width: 149px;
+    height: 72px;
 
-  &--desktop {
-    display: block;
-  }
+    &--desktop {
+      display: block;
+    }
 
-  &--tablet,
-  &--mobile {
-    display: none;
+    &--tablet,
+    &--mobile {
+      display: none;
+    }
   }
-}
 
   .main-nav__logo {
     margin: 0;
