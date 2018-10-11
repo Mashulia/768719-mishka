@@ -8,17 +8,17 @@
 
 .features__list {
   @include reset-list();
+}
 
-  &--item {
-    font-size: 17px;
-    line-height: 20px;
-    padding-top: 83px;
-  }
+.features__list-item {
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 83px;
 }
 
 @media (min-width: $tablet-width) {
   .features {
-    padding: 50px 30px;
+    padding: 50px 55px 15px 50px;
   }
 
   .features__title {
@@ -28,10 +28,12 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .features__list--item {
-    width: 335px;
+  .features__list-item {
+    width: 327px;
+    margin-bottom: 60px;
 
     &--present {
       order: 6;
@@ -53,35 +55,6 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 60px 225px;
-  }
-
-  .features__title {
-    margin-bottom: 40px;
-  }
-
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .features__list--item {
-    width: 350px;
-
-    &--present {
-      order: 6;
-    }
-
-    &--heart {
-      order: 5;
-    }
-
-    &--racket {
-      order: 4;
-    }
-
-    &--flag {
-      order: 4;
-    }
+    padding: 66px 225px 15px 225px;
   }
 }
