@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after,
+html {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 1px solid blue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

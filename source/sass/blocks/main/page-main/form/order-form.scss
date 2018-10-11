@@ -1,0 +1,19 @@
+.order-form {
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding: 0;
+  }
+
+  .form-title {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    margin-bottom: 130px;
+  }
+}

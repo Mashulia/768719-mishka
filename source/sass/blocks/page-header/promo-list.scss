@@ -1,0 +1,43 @@
+.promo-list {
+  @include reset-list();
+  padding: 30px 0;
+  display: none;
+}
+
+.promo-list__item {
+  padding: 30px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.promo-list__item-link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo-list__item {
+    width: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .promo-list__item {
+    width: 220px;
+  }
+}
