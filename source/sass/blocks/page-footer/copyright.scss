@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 40px;
+}
+
+.copyright__text {
+  @include reset-indents();
+  width: 130px;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.copyright__link {
+  width: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 185px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 185px;
+    padding: 0;
+  }
+}

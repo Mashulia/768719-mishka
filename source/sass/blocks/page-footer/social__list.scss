@@ -1,4 +1,27 @@
 .social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   @include reset-list();
+  padding: 25px 55px;
   border-bottom: 2px solid #ececec;
+}
+
+.social__list-item {
+  width: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 145px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    width: 145px;
+    padding: 0;
+  }
 }
