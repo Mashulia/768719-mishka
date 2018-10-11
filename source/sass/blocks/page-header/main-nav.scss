@@ -18,6 +18,11 @@
 .main-nav__logo-image {
   width: 86px;
   height: 35px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__button {
@@ -47,6 +52,20 @@
     justify-content: space-between;
   }
 
+  .main-nav__logo-image {
+    width: 113px;
+    height: 46px;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
   .main-nav__wrapper {
     width: 167px;
     order: -3;
@@ -71,6 +90,20 @@
     width: 167px;
     order: -2;
   }
+
+  .main-nav__logo-image {
+  width: 149px;
+  height: 72px;
+
+  &--desktop {
+    display: block;
+  }
+
+  &--tablet,
+  &--mobile {
+    display: none;
+  }
+}
 
   .main-nav__logo {
     margin: 0;
