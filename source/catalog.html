@@ -120,15 +120,17 @@
 
         <section class="video-preview">
           <h2 class="video-preview__title title-catalog">Процесс производства</h2>
-          <video  class="video-preview__resource video-preview__resource--mobile" poster="img/video-mobile@1x.jpg" width="260" height="150">
-            <source src="video.mp4">
-          </video>
-          <video  class="video-preview__resource video-preview__resource--tablet" poster="img/video-tablet@1x.jpg" width="668" height="455">
+          <picture  class="video-preview__resource>
+            <source  media="(min-width: 1100px)" srcset="../img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source  media="(min-width: 750px)" srcset="../img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="video-preview__resource-image" src="../img/video-mobile@1x.jpg" width="260" height="150" alt="Иллюстрация к процессу производства">
+          </picture>
+          <!-- <video  class="video-preview__resource video-preview__resource--tablet" poster="img/video-tablet@1x.jpg" width="668" height="455">
             <source src="video.mp4">
           </video>
           <video  class="video-preview__resource video-preview__resource--desktop" poster="img/video-desktop@1x.jpg" width="682" height="455">
             <source src="video.mp4">
-          </video>
+          </video> -->
           <div class="catalog__info">
             <p class="video-preview__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
