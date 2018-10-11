@@ -59,7 +59,7 @@
 .modal__button {
   color: #ffffff;
   background-color: $pretty-color;
-  border: none;
+  border-color: $pretty-color;
 
   &:hover,
   &:focus {
@@ -79,7 +79,7 @@
   }
 
   .modal__form {
-    padding: 45px 93px;
+    padding: 50px 105px;
   }
 
   .modal__title {
@@ -105,23 +105,6 @@
 
 @media (min-width: $desktop-width) {
   .modal__order {
-    padding: 0;
     margin: 0 290px;
-  }
-
-  .modal__form {
-    padding: 45px 93px;
-  }
-
-  .modal__title {
-    margin-bottom: 35px;
-    font-size: 30px;
-    line-height: 57px;
-  }
-
-  .modal__list {
-    &--input {
-      padding: 15px 55px;
-    }
   }
 }

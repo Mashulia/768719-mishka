@@ -120,13 +120,13 @@
 
         <section class="video-preview">
           <h2 class="video-preview__title title-catalog">Процесс производства</h2>
-          <video  class="video-preview__resource video-preview__resource--mobile" poster="../img/video-mobile@1x.jpg" width="260" height="150">
+          <video  class="video-preview__resource video-preview__resource--mobile" poster="img/video-mobile@1x.jpg" width="260" height="150">
             <source src="video.mp4">
           </video>
-          <video  class="video-preview__resource video-preview__resource--tablet" poster="../img/video-tablet@1x.jpg" width="668" height="455">
+          <video  class="video-preview__resource video-preview__resource--tablet" poster="img/video-tablet@1x.jpg" width="668" height="455">
             <source src="video.mp4">
           </video>
-          <video  class="video-preview__resource video-preview__resource--desktop" poster="../img/video-desktop@1x.jpg" width="682" height="455">
+          <video  class="video-preview__resource video-preview__resource--desktop" poster="img/video-desktop@1x.jpg" width="682" height="455">
             <source src="video.mp4">
           </video>
           <div class="catalog__info">
@@ -162,6 +162,28 @@
           </div>
         </div>
       </footer>
+
+      <section class="modal modal__order">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__label">Выберите размер:</p>
+          <ul class="modal__list">
+            <li class="modal__list--list--option">
+              <label class="modal__list--input modal__list--input--active" for="size-s">S</label>
+              <input class="visually-hidden" type="radio" id="size-s" name="size" value="размер S">
+            </li>
+            <li class="modal__list--option">
+              <label class="modal__list--input" for="size-m">M</label>
+              <input class="visually-hidden" type="radio" id="size-m" name="size" value="размер M">
+            </li>
+            <li class="modal__list--option">
+              <label class="modal__list--input" for="size-l">L</label>
+              <input class="visually-hidden" type="radio" id="size-l" name="size" value="размер L">
+            </li>
+          </ul>
+          <button class="modal__button button" type="submit">Добавить</button>
+        </form>
+      </section>
     </div>
   </body>
 </html>
