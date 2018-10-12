@@ -30,7 +30,6 @@
   .site-list {
     width: 335px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     text-align: left;
   }
@@ -46,8 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 400px;
-    order: -3;
+    width: 450px;
+    order: -4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,7 +54,14 @@
   }
 
   .site-list__item {
-    width: 175px;
+    width: 185px;
+    border-right: 1px solid #ececec;
+
+    &:nth-of-type(2n) {
+      width: 265px;
+      padding-left: 35px;
+      border-right: none;
+    }
   }
 
   .site-list__item-link {

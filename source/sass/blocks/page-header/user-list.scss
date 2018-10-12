@@ -29,52 +29,91 @@
   display: block;
   padding-left: 45px;
   color: #000000;
-
-  &:hover,
-  &:focus {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
-
-  &:hover .user-list__item-search,
-  &:focus .user-list__item-search,
-  &:hover .user-list__item-cart,
-  &:focus .user-list__item-cart {
-    opacity: 1;
-
-    path {
-      fill: $pretty-color;
-    }
-  }
-
-  &:active .user-list__item-search,
-  &:active .user-list__item-cart {
-    opacity: 0.3;
-  }
 }
+//   &:hover,
+//   &:focus {
+//     color: rgba(0, 0, 0, 0.6);
+//   }
+
+//   &:active {
+//     color: rgba(0, 0, 0, 0.3);
+//   }
+
+//   &:hover .user-list__item-search,
+//   &:focus .user-list__item-search,
+//   &:hover .user-list__item-cart,
+//   &:focus .user-list__item-cart {
+//     opacity: 1;
+
+//     path {
+//       fill: $pretty-color;
+//     }
+//   }
+
+//   &:active .user-list__item-search,
+//   &:active .user-list__item-cart {
+//     opacity: 0.3;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 0;
+  }
+
   .user-list {
-    width: 350px;
+    width: 348px;
     order: -2;
     margin-left: auto;
     text-align: right;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .user-list__item {
-    order: 2;
+    border-left: 1px solid #ececec;
 
     &--search {
-      width: 85px;
+      width: 84px;
     }
 
     &--cart {
-      width: 235px;
+      width: 264px;
+      text-align: right;
+    }
+  }
+
+  .user-list__item-search,
+  .user-list__item-cart {
+    left: 30px;
+  }
+
+
+  .user-list__item--link {
+    &:hover,
+    &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover .user-list__item-search,
+    &:focus .user-list__item-search,
+    &:hover .user-list__item-cart,
+    &:focus .user-list__item-cart {
+      opacity: 1;
+
+      path {
+        fill: $pretty-color;
+      }
+    }
+
+    &:active .user-list__item-search,
+    &:active .user-list__item-cart {
+      opacity: 0.3;
     }
   }
 
@@ -86,13 +125,8 @@
 @media (min-width: $desktop-width) {
   .user-list {
     width: 350px;
-    order: -2;
     text-align: right;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .user-list__item--link-visible {
-    display: none;
   }
 }
