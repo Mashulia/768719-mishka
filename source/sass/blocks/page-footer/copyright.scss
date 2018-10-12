@@ -1,13 +1,16 @@
 .copyright {
+  padding: 25px 40px;
+}
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 25px 40px;
 }
 
 .copyright__text {
   @include reset-indents();
-  width: 130px;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
@@ -17,8 +20,14 @@
   }
 }
 
-.copyright__link {
+.copyright__logo {
   width: 30px;
+}
+
+.copyright__logo {
+  path {
+    fill: $pretty-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,12 +35,22 @@
     width: 185px;
     padding: 0;
   }
-}
 
+  .copyright__logo:hover,
+  .copyright__logo:focus {
+    path {
+      color: #46c1ae;
+    }
+  }
 
-@media (min-width: $desktop-width) {
-  .copyright {
-    width: 185px;
-    padding: 0;
+  .copyright__logo:active {
+      path {
+        color: rgba(99, 209, 187, 0.3);
+      }
+    }
+
+  .copyright__text:active {
+    color: rgba(0, 0, 0, 0.3)
   }
 }
+

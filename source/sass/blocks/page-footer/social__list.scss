@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
 
   @include reset-list();
   padding: 25px 55px;
@@ -16,13 +17,6 @@
   .social__list {
     width: 145px;
     padding: 0;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .social__list {
-    width: 145px;
-    padding: 0;
+    border-bottom: none;
   }
 }

@@ -22,18 +22,12 @@
 
   .page-footer__logo {
     display: block;
+    width: 167px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 50px;
-  }
-
   .page-footer__logo {
-    display: block;
+    width: 175px;
   }
 }

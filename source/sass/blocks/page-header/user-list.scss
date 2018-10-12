@@ -30,31 +30,6 @@
   padding-left: 45px;
   color: #000000;
 }
-//   &:hover,
-//   &:focus {
-//     color: rgba(0, 0, 0, 0.6);
-//   }
-
-//   &:active {
-//     color: rgba(0, 0, 0, 0.3);
-//   }
-
-//   &:hover .user-list__item-search,
-//   &:focus .user-list__item-search,
-//   &:hover .user-list__item-cart,
-//   &:focus .user-list__item-cart {
-//     opacity: 1;
-
-//     path {
-//       fill: $pretty-color;
-//     }
-//   }
-
-//   &:active .user-list__item-search,
-//   &:active .user-list__item-cart {
-//     opacity: 0.3;
-//   }
-// }
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -90,7 +65,7 @@
   }
 
 
-  .user-list__item--link {
+  .user-list__item-link {
     &:hover,
     &:focus {
     color: rgba(0, 0, 0, 0.6);
