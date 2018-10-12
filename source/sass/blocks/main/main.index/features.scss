@@ -14,13 +14,64 @@
   position: relative;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 83px;
+  padding-top: 55px;
+  margin-bottom: 28px;
 
   &::before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
-    background-color: #000000;
+    background-color: #ffffff;
+  }
+
+  &--flower::before {
+    content: url("../img/icon-feature-flower.svg");
+    left: 8px;
+    width: 32px;
+    height: 37px;
+  }
+
+  &--money::before {
+    content: url("../img/icon-feature-money.svg");
+    width: 47px;
+    height: 27px;
+  }
+
+  &--heart::before {
+    content: url("../img/icon-feature-heart.svg");
+    top: 6px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+  }
+
+  &--ball::before {
+    content: url("../img/icon-feature-ball.svg");
+    top: 5px;
+    left: 3px;
+    width: 32px;
+    height: 37px;
+  }
+
+  &--rocket::before {
+    content: url("../img/icon-feature-rocket.svg");
+    top: 6px;
+    left: -5px;
+    width: 55px;
+    height: 23px;
+  }
+
+  &--gift::before {
+    content: url("../img/icon-feature-gift.svg");
+    top: 3px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+  }
+
+  &path {
+    fill: $pretty-color;
   }
 }
 
@@ -42,8 +93,9 @@
   .features__list-item {
     width: 327px;
     margin-bottom: 60px;
+    line-height: 22px;
 
-    &--present {
+    &--gift {
       order: 6;
     }
 
@@ -51,11 +103,11 @@
       order: 5;
     }
 
-    &--racket {
+    &--rocket {
       order: 4;
     }
 
-    &--flag {
+    &--money {
       order: 4;
     }
   }
@@ -64,5 +116,8 @@
 @media (min-width: $desktop-width) {
   .features {
     padding: 66px 225px 15px 225px;
+  }
+  .features__list-item {
+    line-height: 30px;
   }
 }
