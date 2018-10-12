@@ -144,11 +144,11 @@
     }
   }
 
-.services__item-toy:hover,
-.services__item-toy:focus {
-  path {
-    fill: #29a592;
-  }
+  .services__item-toy:hover,
+  .services__item-toy:focus {
+    path {
+      fill: #29a592;
+    }
 
     &:active {
       path {

@@ -30,12 +30,20 @@
     left: 8px;
     width: 32px;
     height: 37px;
+
+    &path {
+      fill: $pretty-color;
+    }
   }
 
   &--money::before {
     content: url("../img/icon-feature-money.svg");
     width: 47px;
     height: 27px;
+
+    &path {
+      fill: $pretty-color;
+    }
   }
 
   &--heart::before {
@@ -44,6 +52,10 @@
     left: 7px;
     width: 34px;
     height: 27px;
+
+    &path {
+      fill: $pretty-color;
+    }
   }
 
   &--ball::before {
@@ -52,6 +64,10 @@
     left: 3px;
     width: 32px;
     height: 37px;
+
+    &path {
+      fill: $pretty-color;
+    }
   }
 
   &--rocket::before {
@@ -60,6 +76,10 @@
     left: -5px;
     width: 55px;
     height: 23px;
+
+    &path {
+      fill: $pretty-color;
+    }
   }
 
   &--gift::before {
@@ -68,10 +88,10 @@
     left: 3px;
     width: 33px;
     height: 32px;
-  }
 
-  &path {
-    fill: $pretty-color;
+    &path {
+      fill: $pretty-color;
+    }
   }
 }
 

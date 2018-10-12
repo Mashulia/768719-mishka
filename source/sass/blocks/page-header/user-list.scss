@@ -66,8 +66,8 @@
   }
 
 
-  .user-list__item-link&:hover,
-  .user-list__item-link&:focus {
+  .user-list__item-link:hover,
+  .user-list__item-link:focus {
     color: rgba(0, 0, 0, 0.6);
 
     &:active {
