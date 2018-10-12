@@ -1,14 +1,16 @@
 .services__title-wrapper {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: 50% 30%;
+  background-position: 50% 18%;
+  bakground-size: cover;
   background-repeat: no-repeat;
+  margin-top: 5px;
 }
 
 .services__title {
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 120px;
-  width: 245px;
+  width: 260px;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
@@ -20,9 +22,11 @@
 }
 
 .services__item {
+  display: flex;
+  justify-content: space-between;
   font-size: 19px;
   color: #ffffff;
-  padding: 30px;
+  padding: 20px 30px;
 
   &--left-btn {
     background-color: $pretty-color;
@@ -31,16 +35,36 @@
   &--right-btn {
     background-color: #56c3b2;
   }
+}
 
-  &--link {
-    font-size: inherit;
-    color: inherit;
+.services__item-link {
+  width: 130px;
+  font-size: inherit;
+  color: inherit;
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
+
+.services__item-toy,
+.services__item-lamp {
+  width: 130px;
+  text-align: right;
+}
+
+.services__item-lamp {
+  path {
+    fill: #3bb09d;
+  }
+}
+
+.services__item-toy {
+  path {
+    fill: #35a999;
+  }
+}
+
 
 .services__item--left-btn:hover,
 .services__item--left-btn:focus {
@@ -55,10 +79,10 @@
   transform: scale(1.05);
 }
 
-.services__item--left-btn:hover .services__item--link,
-.services__item--left-btn:focus .services__item--link,
-.services__item--right-btn:hover .services__item--link,
-.services__item--right-btn:focus .services__item--link {
+.services__item--left-btn:hover .services__item-link,
+.services__item--left-btn:focus .services__item-link,
+.services__item--right-btn:hover .services__item-link,
+.services__item--right-btn:focus .services__item-link {
   transform: translateY(-5px);
 }
 
@@ -69,49 +93,86 @@
 
   .services__title-wrapper {
     background-image: url("../img/hero-tablet@1x.jpg");
+    margin-top: -75px;
   }
 
   .services__title {
-    width: 450px;
-    padding-top: 165px;
+    width: 510px;
+    padding-top: 160px;
     padding-bottom: 350px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .services__list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .services__item {
-    width: 330px;
-    padding: 35px;
+    flex-grow: 1;
+    width: 334px;
+    padding: 30px 35px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 35px;
+    }
+  }
+
+
+.services__item-lamp:hover,
+.services__item-lamp:focus {
+  path {
+    fill: #29a592;
+  }
+
+    &:active {
+      path {
+        fill: rgba(68, 192, 170, 0.3);
+      }
+    }
+  }
+
+.services__item-toy:hover,
+.services__item-toy:focus {
+  path {
+    fill: #29a592;
+  }
+
+    &:active {
+      path {
+        fill: rgba(55, 178, 160, 0.3);
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .services {
-    padding: 0 50px;
-  }
-
   .services__title-wrapper {
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .services__title {
     width: 700px;
-    padding-top: 165px;
+    padding-top: 160px;
     padding-bottom: 350px;
-  }
-
-  .services__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .services__item {
-    width: 521px;
-    padding: 35px;
+    width: 525px;
+    padding-bottom: 15px;
   }
 }
