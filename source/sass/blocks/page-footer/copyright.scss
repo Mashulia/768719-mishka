@@ -22,9 +22,7 @@
 
 .copyright__logo {
   width: 30px;
-}
 
-.copyright__logo {
   path {
     fill: $pretty-color;
   }
@@ -44,10 +42,10 @@
   }
 
   .copyright__logo:active {
-      path {
-        color: rgba(99, 209, 187, 0.3);
-      }
+    path {
+      color: rgba(99, 209, 187, 0.3);
     }
+  }
 
   .copyright__text:active {
     color: rgba(0, 0, 0, 0.3)

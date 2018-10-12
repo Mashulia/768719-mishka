@@ -131,11 +131,11 @@
   }
 
 
-.services__item-lamp:hover,
-.services__item-lamp:focus {
-  path {
-    fill: #29a592;
-  }
+  .services__item-lamp:hover,
+  .services__item-lamp:focus {
+    path {
+      fill: #29a592;
+    }
 
     &:active {
       path {

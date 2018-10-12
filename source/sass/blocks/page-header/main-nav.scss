@@ -121,8 +121,8 @@
   .main-nav__toggle {
     display: none;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       display: none;
     }
   }

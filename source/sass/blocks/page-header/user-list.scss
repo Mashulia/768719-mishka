@@ -24,6 +24,7 @@
   width: 21px;
   height: 18px;
 }
+
 .user-list__item-link {
   position: relative;
   display: block;
@@ -65,11 +66,9 @@
   }
 
 
-  .user-list__item-link {
-    &:hover,
-    &:focus {
+  .user-list__item-link&:hover,
+  .user-list__item-link&:focus {
     color: rgba(0, 0, 0, 0.6);
-    }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);

@@ -23,8 +23,8 @@
 }
 
 .promo__wrapper-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
   &::after {
     content: "";
@@ -69,6 +69,7 @@
 
 .promo__bottom {
   order: 2;
+
   @include reset-indents();
   display: flex;
   flex-direction: column;
