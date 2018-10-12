@@ -7,8 +7,26 @@
   border-bottom: 1px solid #ececec;
 }
 
+.user-list__item-search,
+.user-list__item-cart {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  opacity: 0.2;
+}
+
+.user-list__item-search {
+  width: 18px;
+  height: 18px;
+}
+
+.user-list__item-cart {
+  width: 21px;
+  height: 18px;
+}
 .user-list__item-link {
   position: relative;
+  display: block;
   padding-left: 45px;
   color: #000000;
 
@@ -20,28 +38,23 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
-}
 
-.user-list__item-search,
-.user-list__item-cart {
-  position: absolute;
-  margin-left: -90px;
-  left: 50%;
-  opacity: 0.2;
-}
+  &:hover .user-list__item-search,
+  &:focus .user-list__item-search,
+  &:hover .user-list__item-cart,
+  &:focus .user-list__item-cart {
+    opacity: 1;
 
-.user-list__item-search:hover path,
-.user-list__item-search:focus path,
-.user-list__item-cart:hover path,
-.user-list__item-cart:focus path {
-  fill: $pretty-color;
-}
+    path {
+      fill: $pretty-color;
+    }
+  }
 
-.user-list__item-search:active path,
-.user-list__item-cart:active path {
-  fill: rgba(99, 209, 187, 0.3);
+  &:active .user-list__item-search,
+  &:active .user-list__item-cart {
+    opacity: 0.3;
+  }
 }
-
 
 @media (min-width: $tablet-width) {
   .user-list {
