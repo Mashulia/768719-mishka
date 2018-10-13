@@ -8,8 +8,7 @@
 
 .main-nav__logo {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 19px 30px;
   text-align: center;
   border-bottom: 1px solid #ececec;
 }
@@ -51,9 +50,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 40px;
+    top: 22px;
+    left: -5px;
+    width: 28px;
     height: 2px;
     background-color: #000000;
   }

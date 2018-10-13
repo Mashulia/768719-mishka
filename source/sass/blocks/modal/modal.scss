@@ -1,6 +1,6 @@
 .modal__order {
-  padding: 35px 0 45px 0;
-  box-shadow: 0 5px 10px rgba(241, 241, 241, 0.25);
+  padding: 32px 0 45px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal__form {
@@ -8,8 +8,9 @@
 }
 
 .modal__title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  width: 150px;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
@@ -31,10 +32,10 @@
     text-align: center;
     font-size: 17px;
     line-height: 16px;
-    border: 2px solid #ececec;
+    border: 1px solid #ececec;
 
     &--active {
-      border: 2px solid $pretty-color;
+      border: 1px solid $pretty-color;
     }
 
     &:hover,
@@ -59,7 +60,7 @@
 .modal__button {
   color: #ffffff;
   background-color: $pretty-color;
-  border-color: $pretty-color;
+  border: none;
 
   &:hover,
   &:focus {

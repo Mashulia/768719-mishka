@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  padding: 30px;
+  padding: 27px 30px 40px 30px;
 }
 
 .promo__title {
@@ -9,7 +9,7 @@
 
 .promo__offer {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   color: $pretty-color;
@@ -28,13 +28,15 @@
 
   &::after {
     content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
+    height: 6px;
     width: 100%;
-    height: 25px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: 1px;
   }
 }
 
@@ -59,7 +61,7 @@
 .promo__right-column {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .promo__image {
@@ -73,7 +75,6 @@
   @include reset-indents();
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
 }
 
 .promo__bottom-price {

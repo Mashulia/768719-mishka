@@ -1,14 +1,14 @@
 .contacts {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .contacts__wrapper {
-  padding: 40px 30px 25px 30px;
+  padding: 36px 30px 25px 30px;
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -23,7 +23,7 @@
 .contacts__list-item {
   vertical-align: top;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   &--first-column {
     width: 80px;
@@ -48,12 +48,30 @@
 
 .contacts__map {
   @include reset-indents();
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .contacts__map-img {
+  position: relative;
   width: 322px;
   height: 457px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 67px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__wrapper-button {
+  padding: 0 30px;
 }
 
 .contacts__button {

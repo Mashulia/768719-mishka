@@ -1,5 +1,6 @@
 .features {
   padding: 30px;
+  padding-top: 26px;
 }
 
 .features__title {
@@ -10,88 +11,65 @@
   @include reset-list();
 }
 
-.features__list-item {
+.features__item {
   position: relative;
   font-size: 17px;
   line-height: 20px;
   padding-top: 55px;
   margin-bottom: 28px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
+.features__item-text {
+  @include reset-indents();
+}
+
+.features__item-picture {
+  position: absolute;
+  top: 2px;
+
+  path {
+    fill: $pretty-color;
   }
+}
 
-  &--flower::before {
-    content: url("../img/icon-feature-flower.svg");
+.features__item {
+  &--flower {
     left: 8px;
     width: 32px;
     height: 37px;
-
-    &path {
-      fill: $pretty-color;
-    }
   }
 
-  &--money::before {
-    content: url("../img/icon-feature-money.svg");
+  &--money {
     width: 47px;
     height: 27px;
-
-    &path {
-      fill: $pretty-color;
-    }
   }
 
-  &--heart::before {
-    content: url("../img/icon-feature-heart.svg");
-    top: 6px;
+  &--heart {
+    top: 9px;
     left: 7px;
     width: 34px;
     height: 27px;
-
-    &path {
-      fill: $pretty-color;
-    }
   }
 
-  &--ball::before {
-    content: url("../img/icon-feature-ball.svg");
+  &--ball {
     top: 5px;
     left: 3px;
-    width: 32px;
-    height: 37px;
-
-    &path {
-      fill: $pretty-color;
-    }
+    width: 35px;
+    height: 34px;
   }
 
-  &--rocket::before {
-    content: url("../img/icon-feature-rocket.svg");
-    top: 6px;
+  &--rocket {
+    top: 7px;
     left: -5px;
     width: 55px;
     height: 23px;
-
-    &path {
-      fill: $pretty-color;
-    }
   }
 
-  &--gift::before {
-    content: url("../img/icon-feature-gift.svg");
-    top: 3px;
+  &--gift {
+    top: 5px;
     left: 3px;
     width: 33px;
     height: 32px;
-
-    &path {
-      fill: $pretty-color;
-    }
   }
 }
 
@@ -110,7 +88,7 @@
     justify-content: space-between;
   }
 
-  .features__list-item {
+  .features__item {
     width: 327px;
     margin-bottom: 60px;
     line-height: 22px;
@@ -138,7 +116,7 @@
     padding: 66px 225px 15px 225px;
   }
 
-  .features__list-item {
+  .features__item {
     line-height: 30px;
   }
 }
