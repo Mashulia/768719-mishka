@@ -54,7 +54,8 @@
 }
 
 .catalog__description {
-  @include reset-indents()
+  @include reset-indents();
+
   padding-bottom: 20px;
   font-size: 13px;
   line-height: 30px;
