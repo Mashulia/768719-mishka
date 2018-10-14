@@ -11,14 +11,6 @@
   @include reset-list();
 }
 
-.features__item {
-  position: relative;
-  font-size: 17px;
-  line-height: 20px;
-  padding-top: 55px;
-  margin-bottom: 28px;
-}
-
 .features__item-text {
   @include reset-indents();
 }
@@ -33,6 +25,12 @@
 }
 
 .features__item {
+  position: relative;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 55px;
+  margin-bottom: 28px;
+
   &--flower {
     left: 8px;
     width: 32px;
@@ -95,21 +93,21 @@
   }
 
   .features__item-gift {
-      order: 6;
-    }
+    order: 6;
+  }
 
   .features__item-heart {
-      order: 5;
-    }
+    order: 5;
+  }
 
   .features__item-rocket {
-      order: 4;
-    }
+    order: 4;
+  }
 
   .features__item-money {
-      order: 4;
-    }
+    order: 4;
   }
+}
 
 @media (min-width: $desktop-width) {
   .features {

@@ -1,17 +1,17 @@
 .reviews {
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
     height: 7px;
     width: 100%;
     position: absolute;
     bottom: -1px;
     left: 0;
-    background-image: url(../img/bg-zigzag-line.svg);
+    background-image: url("../img/bg-zigzag-line.svg");
     background-position-x: 9px;
     background-size: 320px 100%;
-    }
+  }
 }
 
 .reviews__wrapper {
