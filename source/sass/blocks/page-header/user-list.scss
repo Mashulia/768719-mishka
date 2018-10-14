@@ -9,6 +9,8 @@
 
 .user-list__item-search,
 .user-list__item-cart {
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -40,7 +42,6 @@
   .user-list {
     width: 348px;
     order: -2;
-    margin-left: auto;
     text-align: right;
     display: flex;
     justify-content: space-between;
@@ -48,6 +49,7 @@
   }
 
   .user-list__item {
+    padding: 0;
     border-left: 1px solid #ececec;
 
     &--search {
@@ -65,6 +67,11 @@
     left: 30px;
   }
 
+  .user-list__item-link {
+    display: block;
+    padding: 30px 50px 34px 0;
+    font-size: 17px;
+  }
 
   .user-list__item-link:hover,
   .user-list__item-link:focus {

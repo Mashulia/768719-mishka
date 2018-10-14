@@ -28,14 +28,17 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 335px;
+    padding-left: 50px;
+    width: 384px;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
   }
 
   .site-list__item {
+    padding: 18px 0;
     width: 166px;
+    border-bottom: none;
   }
 
   .site-list__item-link {

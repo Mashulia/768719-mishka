@@ -1,6 +1,19 @@
 .promo {
   position: relative;
   padding: 27px 30px 40px 30px;
+
+  &::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: 1px;
+  }
 }
 
 .promo__title {
@@ -25,19 +38,6 @@
 .promo__wrapper-body {
   display: flex;
   flex-direction: column;
-
-  &::after {
-    content: "";
-    height: 6px;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background-image: url(../img/bg-zigzag-line.svg);
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position-x: 1px;
-  }
 }
 
 .promo__list {
@@ -54,7 +54,7 @@
 
 .promo__list-item {
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -85,14 +85,21 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 50px;
+    padding: 34px 50px 75px 50px;
+
+    &::after {
+      bottom: 5px;
+      background-size: 768px 100%;
+      background-position-x: 20px;
+      height: 17px;
+    }
   }
 
   .promo__wrapper-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 
   .promo__offer {
@@ -100,6 +107,7 @@
     line-height: 17px;
     text-align: center;
     margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .promo__offer-description {
@@ -109,11 +117,8 @@
   }
 
   .promo__title {
+    margin-bottom: 0;
     width: 440px;
-  }
-
-  .promo__list {
-    margin-bottom: 60px;
   }
 
   .promo__wrapper-body {
@@ -123,10 +128,11 @@
   }
 
   .promo__left-column {
-    width: 290px;
+    width: 280px;
   }
 
   .promo__right-column {
+    margin-bottom: 0;
     width: 334px;
   }
 
@@ -138,7 +144,7 @@
   .promo__bottom {
     margin-bottom: 0;
     width: 290px;
-    margin-top: -45px;
+    margin-top: -20px;
   }
 }
 

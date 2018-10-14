@@ -84,19 +84,20 @@
   }
 
   .contacts__wrapper {
-    padding: 65px 50px 45px 50px;
+    padding: 56px 50px 45px 50px;
   }
 
   .contacts__title {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 43px;
     line-height: 50px;
 
     &::after {
       content: "";
       position: absolute;
-      right: 0;
+      top: -14px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -125,11 +126,12 @@
   }
 
   .contacts__button {
-    display: inline;
+    margin: 0 auto;
+    width: 230px;
   }
 
   .contacts__wrapper-button {
-    padding: 55px 50px;
+    padding: 47px 50px 55px 50px;
     text-align: center;
   }
 }
