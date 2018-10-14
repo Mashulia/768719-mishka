@@ -35,7 +35,7 @@
   content: "";
   position: absolute;
   top: 25%;
-  right: 0;
+  right: 30px;
   width: 20px;
   height: 2px;
   background-color: #000000;
@@ -117,6 +117,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 0;
+    z-index: 2;
+  }
+
   .main-nav__toggle {
     display: none;
 
@@ -130,6 +135,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    z-index: 2;
   }
 
   .main-nav__logo {
@@ -137,6 +144,7 @@
     width: 320px;
     order: -3;
     text-align: left;
+    border-bottom: none;
   }
 
   .main-nav__delivery {
@@ -149,13 +157,15 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    width: 250px;
+    padding: 20px;
+    width: 245px;
     text-align: left;
   }
 
   .main-nav__delivery {
     display: block;
-    width: 240px;
+    width: 280px;
+    padding: 9px 50px 15px 0;
     margin-left: auto;
   }
 }

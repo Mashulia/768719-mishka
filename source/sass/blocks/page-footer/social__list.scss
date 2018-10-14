@@ -14,8 +14,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    width: 140px;
+  }
+
   .social__list {
-    width: 145px;
     padding: 0;
     border-bottom: none;
   }
