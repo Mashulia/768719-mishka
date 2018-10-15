@@ -1,5 +1,6 @@
-.reviews {
+.reviews__wrapper {
   position: relative;
+  padding: 0 31px 50px 30px;
 
   &::after {
     content: "";
@@ -13,10 +14,6 @@
     background-size: 320px 100%;
     opacity: 0.6;
   }
-}
-
-.reviews__wrapper {
-  padding: 0 31px 50px 30px;
 }
 
 .reviews__title {
@@ -44,7 +41,6 @@
   color: #000000;
   margin-bottom: 10px;
 }
-
 
 .reviews__list-author-email {
   font-size: 17px;
@@ -82,21 +78,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    position: relative;
-
-    &::after {
-      bottom: 5px;
-      background-size: 768px 100%;
-      background-position-x: 20px;
-      height: 17px;
-    }
-  }
-
-  .reviews__wrapper {
+ .reviews__wrapper {
     padding: 77px 50px 137px 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    &::after {
+      bottom: 5px;
+      background-size: auto 100%;
+      background-position-x: 20px;
+      height: 17px;
+    }
   }
 
   .reviews__title {
@@ -159,20 +151,27 @@
   }
 
   .reviews__wrapper {
-    padding: 70px 0 160px 175px;
+    padding: 70px 0 188px 175px;
+
+    &::after {
+      background-position-x: 25px;
+      height: 21px;
+    }
   }
 
   .reviews__list-text {
-    margin-bottom: 50px;
+    margin-bottom: 38px;
+    width: 725px;
   }
 
   .reviews__switch {
-    bottom: 30%;
-    right: 2%;
+    width: 170px;
+    bottom: 163px;
+    right: 0;
   }
 
   .reviews__button {
-    top: 12%;
-    right: 3%;
+    top: 15%;
+    right: 0;
   }
 }

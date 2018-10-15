@@ -1,20 +1,6 @@
 .promo {
   position: relative;
   padding: 27px 30px 40px 30px;
-
-  &::after {
-    content: "";
-    height: 6px;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position-x: 1px;
-    opacity: 0.6;
-  }
 }
 
 .promo__title {
@@ -39,6 +25,20 @@
 .promo__wrapper-body {
   display: flex;
   flex-direction: column;
+
+  &::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: 1px;
+    opacity: 0.6;
+  }
 }
 
 .promo__list {
@@ -87,13 +87,6 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding: 34px 50px 75px 50px;
-
-    &::after {
-      bottom: 5px;
-      background-size: 768px 100%;
-      background-position-x: 20px;
-      height: 17px;
-    }
   }
 
   .promo__wrapper-header {
@@ -126,6 +119,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &::after {
+      bottom: 5px;
+      background-size: auto 100%;
+      background-position-x: 20px;
+      height: 17px;
+    }
   }
 
   .promo__left-column {
@@ -151,7 +151,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 130px 50px 70px 50px;
+    padding: 125px 50px 100px 50px;
   }
 
   .promo__wrapper-header {
@@ -175,21 +175,30 @@
   }
 
   .promo__list {
-    margin-bottom: 110px;
+    margin-bottom: 154px;
   }
 
   .promo__wrapper-body {
     display: flex;
+
+    &::after {
+      background-position-x: 25px;
+      height: 21px;
+    }
   }
 
   .promo__left-column {
-    width: 290px;
+    width: 280px;
     margin-left: 175px;
   }
 
   .promo__right-column {
     width: 525px;
     margin-top: -170px;
+  }
+
+  .promo__offer-description {
+    margin-bottom: 48px;
   }
 
   .promo__price {

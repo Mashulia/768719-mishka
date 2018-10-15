@@ -32,10 +32,10 @@
     text-align: center;
     font-size: 17px;
     line-height: 16px;
-    border: 1px solid #ececec;
+    border: 2px solid #ececec;
 
     &--active {
-      border: 1px solid $pretty-color;
+      border: 2px solid $pretty-color;
     }
 
     &:hover,
@@ -92,7 +92,7 @@
 
   .modal__list {
     &--input {
-      padding: 15px 55px;
+      padding: 16px 55px;
     }
   }
 
@@ -104,5 +104,19 @@
 @media (min-width: $desktop-width) {
   .modal {
     margin: 0 290px;
+  }
+
+  .modal__form {
+    padding: 38px 110px;
+    padding-bottom: 45px;
+  }
+
+  .modal__label {
+    margin-bottom: 20px;
+  }
+
+  .button.modal__button {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

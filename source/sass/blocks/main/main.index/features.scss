@@ -112,10 +112,11 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 66px 225px 15px 225px;
+    padding: 54px 225px 15px 225px;
   }
 
   .features__item {
-    line-height: 30px;
+    width: 348px;
+    margin-bottom: 40px;
   }
 }

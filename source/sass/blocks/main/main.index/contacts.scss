@@ -139,13 +139,14 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    padding: 145px 50px 100px 225px;
+    padding: 140px 50px 100px 220px;
     display: flex;
+    justify-content: space-between;
   }
 
   .contacts__wrapper {
     padding: 0;
-    width: 350px;
+    width: 300px;
   }
 
   .contacts__title {
@@ -154,20 +155,17 @@
   }
 
   .contacts__title::after {
-    top: 0;
-    right: 415px;
+    top: -9px;
+    right: 360px;
   }
 
   .contacts__map {
     margin: 0;
-    margin-top: -90px;
-  }
-
-  .contacts__button {
-    display: inline;
+    margin-top: -73px;
   }
 
   .contacts__wrapper-button {
+    width: 240px;
     padding: 0;
     position: absolute;
     top: 75%;
