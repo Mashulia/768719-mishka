@@ -99,6 +99,10 @@
     &--letter {
       background-position: 445px -4px;
     }
+
+    &--text {
+      margin-top: -20px;
+    }
   }
 }
 
@@ -113,9 +117,19 @@
 
   .order-form__input {
     &--tel,
-    &--letter {
+    &--letter,
+    &--text {
       width: 700px;
       margin-right: 175px;
+
+    }
+
+    &--tel {
+      background-position: 665px 0;
+    }
+
+    &--letter {
+      background-position: 663px -4px;
     }
   }
 }

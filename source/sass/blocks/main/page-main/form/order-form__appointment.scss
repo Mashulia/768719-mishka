@@ -136,8 +136,8 @@
   .order-form__appointment-clarification {
     display: flex;
     justify-content: space-between;
-    padding-left: 72px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 50px;
 
     &-text {
@@ -146,6 +146,7 @@
       font-size: 17px;
       line-height: 30px;
       margin-bottom: 0;
+      text-align: right;
     }
   }
 
@@ -172,5 +173,14 @@
     &--middle-name {
       width: 575px;
     }
+  }
+
+  .order-form__appointment-list {
+    margin-bottom: 5px;
+  }
+
+  .order-form__appointment-clarification {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
