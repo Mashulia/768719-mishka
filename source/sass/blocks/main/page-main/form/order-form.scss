@@ -32,7 +32,7 @@
   border: none;
   border-bottom: 2px solid #000000;
 
-  &:placeholder {
+  &::placeholder {
     opacity: 0.3;
   }
 
@@ -121,7 +121,6 @@
     &--text {
       width: 700px;
       margin-right: 175px;
-
     }
 
     &--tel {
