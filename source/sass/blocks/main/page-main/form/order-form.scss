@@ -40,14 +40,12 @@
     background-image: url("../img/icon-phone.svg");
     background-position: 229px 7px;
     background-repeat: no-repeat;
-    opacity: 0.2;
   }
 
   &--letter {
     background-image: url("../img/icon-mail.svg");
     background-position: 226px 7px;
     background-repeat: no-repeat;
-    opacity: 0.2;
   }
 
   &--text {
@@ -111,9 +109,5 @@
 
   .order-form__description {
     padding: 0 225px;
-  }
-
-  .form-title {
-    margin-bottom: 130px;
   }
 }

@@ -5,6 +5,7 @@
 
 .order-form__appointment-sublist {
   @include reset-list();
+  margin-bottom: 33px;
 }
 
 .order-form__appointment-item {
@@ -33,13 +34,8 @@
   }
 }
 
-.order-form__appointment-sublist {
-  margin-bottom: 33px;
-}
-
 .order-form__appointment-clarification-text {
   display: block;
-  padding-left: 50px;
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
