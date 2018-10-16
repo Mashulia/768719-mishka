@@ -92,6 +92,7 @@
   }
 
   .order-form__appointment-count {
+    width: 500px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 39px;
@@ -106,30 +107,30 @@
 
     &--name {
       width: 55px;
-
-      & + .order-form__appointment-input {
-        width: 428px;
-      }
     }
 
     &--surname,
     &--middle-name {
       width: 100px;
-
-      & + .order-form__appointment-input {
-        width: 375px;
-      }
     }
   }
 
   .order-form__appointment-input {
-    width: 500px;
     font-size: 19px;
     padding: 12px;
     padding-top: 0;
 
     &--text {
       margin-top: -20px;
+    }
+
+    &--name {
+    width: 428px;
+  }
+
+    &--surname,
+    &--middle-name {
+      width: 375px;
     }
   }
 
@@ -159,9 +160,18 @@
 @media (min-width: $desktop-width) {
   .order-form__appointment-sublist {
     width: 700px;
+    margin-right: 175px;
   }
 
-  .order-form__appointment-label {
-    margin-right: 25px;
+  .order-form__appointment-input {
+
+    &--name {
+    width: 628px;
+  }
+
+    &--surname,
+    &--middle-name {
+      width: 575px;
+    }
   }
 }
