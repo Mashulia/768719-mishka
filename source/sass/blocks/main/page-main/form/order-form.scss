@@ -110,4 +110,12 @@
   .order-form__description {
     padding: 0 225px;
   }
+
+  .order-form__input {
+    &--tel,
+    &--letter {
+      width: 700px;
+      margin-right: 175px;
+    }
+  }
 }

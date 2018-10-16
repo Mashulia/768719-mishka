@@ -92,7 +92,6 @@
   }
 
   .order-form__appointment-count {
-    width: 500px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 39px;
@@ -125,8 +124,8 @@
     }
 
     &--name {
-    width: 428px;
-  }
+      width: 428px;
+    }
 
     &--surname,
     &--middle-name {
@@ -166,8 +165,8 @@
   .order-form__appointment-input {
 
     &--name {
-    width: 628px;
-  }
+      width: 628px;
+    }
 
     &--surname,
     &--middle-name {
