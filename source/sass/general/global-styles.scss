@@ -31,13 +31,15 @@ img {
   font-family: "OpenSans";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff"); }
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
+}
 
 @font-face {
   font-family: "OpenSans";
   font-weight: 800;
   font-style: bold;
-  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff"); }
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

@@ -70,52 +70,46 @@
             </div>
             <fieldset class="order-form__filter order-form__filter--type">
               <div class="order-form__wrapper">
-                <div class="order-form__filter-name">
-                  <span class="order-form__filter-title">Тип</span>
-                  <span class="order-form__filter-line"></span>
-                </div>
+                <span class="order-form__filter-title">Тип</span>
                 <ul class="order-form__filter-list">
                   <li class="order-form__filter-option">
-                    <input class="visually-hidden order-form__filter-input order-form__filter-input--radio order-form__filter-input--radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
-                    <label class="order-form__filter-label" for="decoration">Аксессуар для интерьера</label>
+                    <input class="visually-hidden order-form__filter-input order-form__filter-input--radio order-form__filter-input--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
+                    <label class="order-form__filter-label order-form__type-label" for="decoration">Аксессуар для интерьера</label>
                   </li>
                   <li class="order-form__filter-option">
                     <input class="visually-hidden order-form__filter-input order-form__filter-input--radio" type="radio" name="type-product" value="toy" id="toy">
-                    <label class="order-form__filter-label" for="toy">Детская игрушка</label>
+                    <label class="order-form__filter-label order-form__type-label" for="toy">Детская игрушка</label>
                   </li>
                 </ul>
               </div>
           </fieldset>
           <fieldset class="order-form__filter order-form__filter--color">
             <div class="order-form__wrapper">
-              <div class="order-form__filter-name">
-                <span class="order-form__filter-title">Цвет</span>
-                <span class="order-form__filter-line"></span>
-              </div>
+              <span class="order-form__filter-title">Цвет</span>
               <ul class="order-form__filter-list order-form__filter-list--color">
                 <li class="order-form__filter-option order-form__filter-option--color">
-                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="white" id="white" checked>
-                  <label class="order-form__filter-label" for="white">Белый</label>
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checked" type="checkbox" name="white" id="white" checked>
+                  <label class="order-form__filter-label order-form__color-label" for="white">Белый</label>
                 </li>
                 <li class="order-form__filter-option order-form__filter-option--color">
-                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checkbox--checked" type="checkbox" name="gray" id="gray" checked>
-                  <label class="order-form__filter-label" for="gray">Серый</label>
+                  <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox order-form__filter-input--checked" type="checkbox" name="gray" id="gray" checked>
+                  <label class="order-form__filter-label order-form__color-label" for="gray">Серый</label>
                 </li>
                 <li class="order-form__filter-option order-form__filter-option--color">
                   <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="tiffany" id="tiffany">
-                  <label class="order-form__filter-label" for="tiffany">«Тиффани»</label>
+                  <label class="order-form__filter-label order-form__color-label" for="tiffany">«Тиффани»</label>
                 </li>
                 <li class="order-form__filter-option order-form__filter-option--color">
                   <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="black" id="black">
-                  <label class="order-form__filter-label" for="black">Черный</label>
+                  <label class="order-form__filter-label order-form__color-label" for="black">Черный</label>
                 </li>
                 <li class="order-form__filter-option order-form__filter-option--color">
                   <input class="visually-hidden order-form__filter-input order-form__filter-input--checkbox" type="checkbox" name="pink" id="pink">
-                  <label class="order-form__filter-label" for="pink">Розовый</label>
+                  <label class="order-form__filter-label order-form__color-label" for="pink">Розовый</label>
                 </li>
                 <li class="order-form__filter-option order-form__filter-option--color">
                   <input class="visually-hidden form__filter--input form__filter--checkbox" type="checkbox" name="orange" id="orange">
-                  <label class="order-form__filter-label" for="orange">Оранжевый</label>
+                  <label class="order-form__filter-label order-form__color-label" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </div>
@@ -123,10 +117,7 @@
             <div class="order-form__appointment">
               <ul class="order-form__appointment-list">
                 <li class="order-form__appointment-item order-form__appointment-item--sublist">
-                  <div class="order-form__filter-name">
-                    <span class="order-form__filter-title">ФИО</span>
-                    <span class="order-form__filter-line"></span>
-                  </div>
+                  <span class="order-form__filter-title order-form__filter-title--sublist">ФИО</span>
                   <ul class="order-form__appointment-sublist">
                     <li class="order-form__appointment-count">
                       <label class="order-form__appointment-label" for="name">Имя:</label>
@@ -143,28 +134,19 @@
                   </ul>
                 <li class="order-form__appointment-item order-form__appointment-item--contacts">
                   <div class="order-form__appointment-wrapper">
-                    <div class="order-form__filter-name">
-                      <label class="order-form__filter-title" for="tel">Тел</label>
-                      <span class="order-form__filter-line"></span>
-                    </div>
+                      <label class="order-form__filter-title order-form__filter-title--appointment" for="tel">Тел</label>
                     <input class="order-form__appointment-input order-form__input order-form__input--tel" id="tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
                   </div>
                 </li>
                 <li class="order-form__appointment-item order-form__appointment-item--contacts">
                   <div class="order-form__appointment-wrapper">
-                    <div class="order-form__filter-name">
-                      <label class="order-form__filter-title" for="email">E-mail</label>
-                      <span class="order-form__filter-line"></span>
-                    </div>
+                    <label class="order-form__filter-title order-form__filter-title--appointment" for="email">E-mail</label>
                     <input class="order-form__appointment-input order-form__input order-form__input--letter" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
                   </div>
                 </li>
                 <li class="order-form__appointment-item order-form__appointment-item--text">
-                  <div class="order-form__filter-name">
-                    <label class="order-form__filter-title" for="text">Доп</label>
-                    <span class="order-form__filter-line"></span>
-                  </div>
-                  <textarea class="order-form__appointment-input order-form__input order-form__appointment-input--text" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
+                  <label class="order-form__filter-title order-form__filter-title--appointment" for="text">Доп</label>
+                  <textarea class="order-form__appointment-input order-form__input order-form__input--text" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </li>
               </ul>
             </div>

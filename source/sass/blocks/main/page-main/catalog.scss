@@ -126,7 +126,7 @@
 
     &:hover,
     &:focus {
-    opacity: 1;
+      opacity: 1;
 
       path {
         fill: $pretty-color;
@@ -167,6 +167,7 @@
   .catalog__description {
     margin-bottom: 18px;
   }
+
   .catalog__item {
     display: block;
     width: 315px;
@@ -186,7 +187,7 @@
     width: 334px;
     padding-top: 23px;
     padding-left: 28px;
-    padding-bottom: 24px;;
+    padding-bottom: 24px;
   }
 
   .catalog__price {
