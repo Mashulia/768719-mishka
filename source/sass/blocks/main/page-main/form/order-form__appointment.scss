@@ -39,6 +39,7 @@
 
 .order-form__appointment-clarification-text {
   display: block;
+  padding-left: 50px;
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
@@ -51,19 +52,35 @@
 
     &--sublist,
     &--text {
-      padding: 65px 50px 50px 50px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+
+      & .order-form__wrapper {
+        padding-bottom: 47px;
+      }
     }
 
-    &--contacts {
+    &--text {
+      padding: 70px 50px 43px 50px;
+    }
+
+    &--tel {
       background-color: #f1f1f1;
+      padding-top: 70px;
+    }
+
+    &--e-mail {
+      background-color: #f1f1f1;
+      padding-top: 41px;
+      padding-bottom: 50px;
     }
   }
 
   .order-form__appointment-wrapper {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
+    justify-content: space-between;
   }
 
   .order-form__input {
@@ -75,29 +92,71 @@
 
   .order-form__appointment-sublist {
     width: 500px;
+    margin-bottom: 0;
   }
 
   .order-form__appointment-count {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .order-form__appointment-label {
-    margin-right: 20px;
+    font-size: 19px;
+
+    &--name {
+      width: 55px;
+
+      & + .order-form__appointment-input {
+        width: 428px;
+      }
+    }
+
+    &--surname,
+    &--middle-name {
+      width: 100px;
+
+      & + .order-form__appointment-input {
+        width: 375px;
+      }
+    }
+  }
+
+  .order-form__appointment-input {
+    width: 500px;
+    font-size: 19px;
+    padding: 12px;
+    padding-top: 0;
+
+    &--text {
+      margin-top: -20px;
+    }
   }
 
   .order-form__appointment-clarification {
     display: flex;
     justify-content: space-between;
+    padding-left: 72px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 
-    &--text {
+    &-text {
+      margin-top: 10px;
       width: 335px;
-      text-align: left;
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 0;
     }
   }
 
   .order-form__button {
     order: -1;
     width: 230px;
+    margin-bottom: 0;
   }
 }
 

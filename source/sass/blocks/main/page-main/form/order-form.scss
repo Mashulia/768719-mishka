@@ -29,9 +29,12 @@
   line-height: 18px;
   font-weight: normal;
   color: inherit;
-  opacity: 0.3;
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:placeholder {
+    opacity: 0.3;
+  }
 
   &--tel {
     background-image: url("../img/icon-phone.svg");
@@ -49,7 +52,6 @@
 
   &--text {
     padding: 15px;
-    padding-right: 80px;
     min-height: 142px;
     border: 2px solid #000000;
 
@@ -78,10 +80,10 @@
   }
 
   .form-title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
-   .order-form__description {
+  .order-form__description {
     padding: 0 50px;
   }
 
@@ -89,6 +91,16 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 0;
+  }
+
+  .order-form__input {
+    &--tel {
+      background-position: 448px 0;
+    }
+
+    &--letter {
+      background-position: 445px -4px;
+    }
   }
 }
 

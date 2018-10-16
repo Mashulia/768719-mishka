@@ -118,6 +118,8 @@
 
 @media (min-width: $tablet-width) {
   .order-form__filter {
+    margin-bottom: 0;
+
     &--color {
       background-color: #f1f1f1;
     }
@@ -125,6 +127,16 @@
 
   .order-form__filter-title {
     width: 167px;
+    margin-bottom: 0;
+    padding-right: 0;
+
+    &:last-child {
+      margin-top: -20px;
+    }
+
+    &::after {
+      background-color: transparent;
+    }
   }
 
   .order-form__filter-name {
@@ -144,16 +156,52 @@
 
   .order-form__wrapper {
     display: flex;
-    padding: 50px;
+    padding: 70px 50px 61px 50px;
   }
 
   .order-form__filter-option {
-    margin-bottom: 25px;
-    width: 239px;
+    padding-left: 80px;
+    margin-bottom: 50px;
+
+    &--color {
+      width: 238px;
+    }
   }
+
+  .order-form__filter--color .order-form__filter-option:nth-last-child(2) {
+      margin-bottom: 0;
+    }
 
   .order-form__filter-label {
     font-size: 19px;
+  }
+
+  .order-form__type-label::before {
+    top: -16px;
+    left: -79px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-form__filter-input--checked +.order-form__type-label::after {
+    top: -2px;
+    left: -64px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .order-form__color-label::before {
+    top: -17px;
+    left: -79px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-form__filter-input--checked +.order-form__color-label::after {
+    top: -10px;
+    left: -68px;
+    width: 32px;
+    height: 17px;
   }
 }
 
