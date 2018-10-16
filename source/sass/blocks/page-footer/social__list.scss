@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 
   @include reset-list();
   padding: 23px 60px;
@@ -16,10 +16,16 @@
 @media (min-width: $tablet-width) {
   .social {
     width: 140px;
+    padding-top: 7px;
   }
 
   .social__list {
     padding: 0;
     border-bottom: none;
+  }
+
+  .social__list-item {
+    width: 20px;
+
   }
 }

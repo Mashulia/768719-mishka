@@ -59,8 +59,8 @@
 
   .user-list__item-search,
   .user-list__item-cart {
-    top: 30px;
-    left: 30px;
+    top: 36px;
+    left: 34px;
   }
 
   .user-list__item-link {
@@ -101,7 +101,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 404px;
+    width: 401px;
     text-align: right;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +112,11 @@
   }
 
   .user-list__item--cart {
-    width: 319px;
+    width: 318px;
+  }
+
+  .user-list__item--search {
+    width: 83px;
   }
 
   .user-list__item-search,

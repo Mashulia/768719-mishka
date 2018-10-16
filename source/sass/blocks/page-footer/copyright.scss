@@ -21,7 +21,7 @@
 }
 
 .copyright__logo {
-  width: 37px;
+  width: 32px;
   height: 37px;
 
   path {
@@ -51,5 +51,11 @@
 
   .copyright__text:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-top: 3px;
   }
 }
