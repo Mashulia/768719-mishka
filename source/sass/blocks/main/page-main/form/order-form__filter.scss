@@ -223,17 +223,14 @@
 
   .order-form__filter-option {
     width: 350px;
+    margin-bottom: 53px;
 
     &--color {
       width: 215px;
       margn-left: 60px;
     }
-  }
 
-  .order-form__filter-option {
-    margin-bottom: 53px;
-
-    &--color:nth-last-child(3)  {
+    &--color:nth-last-child(3) {
       margin-bottom: 0;
     }
   }
