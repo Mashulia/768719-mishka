@@ -147,6 +147,15 @@
     border-bottom: none;
   }
 
+  .main-nav__logo-image:hover,
+  .main-nav__logo-image:focus {
+    opacity: 0.6;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .main-nav__delivery {
     display: block;
     padding: 17px 50px 15px 0;

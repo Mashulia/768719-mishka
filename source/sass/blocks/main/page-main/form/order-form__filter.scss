@@ -69,7 +69,7 @@
   user-select: none;
 }
 
-.order-form__type-label::before {
+.order-form__filter-input--radio + .order-form__type-label::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -80,7 +80,7 @@
   border-radius: 50%;
 }
 
-.order-form__filter-input--checked + .order-form__type-label::after {
+.order-form__filter-input--radio:checked + .order-form__type-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -92,7 +92,7 @@
   background-color: $pretty-color;
 }
 
-.order-form__color-label::before {
+.order-form__filter-input--checkbox + .order-form__color-label::before {
   content: "";
   display: block;
   position: absolute;
@@ -103,7 +103,7 @@
   border: 2px solid #000000;
 }
 
-.order-form__filter-input--checked + .order-form__color-label::after {
+.order-form__filter-input--checkbox:checked + .order-form__color-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -115,6 +115,7 @@
   border-left: 2px solid #000000;
   transform: rotate(-45deg);
 }
+
 
 @media (min-width: $tablet-width) {
   .order-form__filter {
@@ -176,32 +177,41 @@
     font-size: 19px;
   }
 
-  .order-form__type-label::before {
+  .order-form__filter-input--radio + .order-form__type-label::before {
     top: -16px;
     left: -79px;
     width: 50px;
     height: 50px;
   }
 
-  .order-form__filter-input--checked + .order-form__type-label::after {
+  .order-form__filter-input--radio:checked + .order-form__type-label::after {
     top: -2px;
     left: -64px;
     width: 20px;
     height: 20px;
   }
 
-  .order-form__color-label::before {
+  .order-form__filter-input--checkbox + .order-form__color-label::before {
     top: -17px;
     left: -79px;
     width: 52px;
     height: 52px;
   }
 
-  .order-form__filter-input--checked + .order-form__color-label::after {
+  .order-form__filter-input--checkbox:checked + .order-form__color-label::after {
     top: -10px;
     left: -68px;
     width: 32px;
     height: 17px;
+  }
+
+  .order-form__filter-input:hover + .order-form__filter-label::before,
+  .order-form__filter-input:focus + .order-form__filter-label::before {
+    border-color: $pretty-color;
+  }
+
+  .order-form__filter-input:active + .order-form__filter-label::before {
+    border-color: rgba(0, 0, 0, 0.3);
   }
 }
 
