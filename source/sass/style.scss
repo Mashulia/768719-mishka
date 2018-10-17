@@ -4,10 +4,8 @@
 @import "blocks/modal/modal.scss";
 @import "blocks/container/container.scss";
 @import "blocks/container/container-title.scss";
-@import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/main-nav.scss";
 @import "blocks/main/button.scss";
-@import "blocks/main/visually-hidden.scss";
 @import "blocks/page-header/site-list.scss";
 @import "blocks/page-header/promo-list.scss";
 @import "blocks/page-header/user-list.scss";
@@ -19,11 +17,10 @@
 @import "blocks/main/page-main/page-main__title.scss";
 @import "blocks/main/page-main/catalog.scss";
 @import "blocks/main/page-main/video-preview.scss";
-@import "blocks/main/page-main/form/order-form__description-slogan.scss";
 @import "blocks/main/page-main/form/order-form.scss";
 @import "blocks/main/page-main/form/order-form__filter.scss";
 @import "blocks/main/page-main/form/order-form__appointment.scss";
-@import "blocks/main/page-main/form/order-form__button.scss";
 @import "blocks/page-footer/page-footer.scss";
 @import "blocks/page-footer/social__list.scss";
 @import "blocks/page-footer/copyright.scss";
+// @import "../js/main-nav.js";

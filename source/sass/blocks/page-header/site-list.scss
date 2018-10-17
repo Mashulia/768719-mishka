@@ -3,7 +3,7 @@
 }
 
 .site-list__item {
-  padding: 30px 0;
+  padding: 27px 30px;
   border-bottom: 1px solid #ececec;
 
   &--news,
@@ -28,15 +28,17 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 335px;
+    padding-left: 50px;
+    width: 384px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     text-align: left;
   }
 
   .site-list__item {
+    padding: 18px 0;
     width: 166px;
+    border-bottom: none;
   }
 
   .site-list__item-link {
@@ -46,8 +48,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 400px;
-    order: -3;
+    width: 480px;
+    order: -4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,7 +57,15 @@
   }
 
   .site-list__item {
-    width: 175px;
+    padding: 30px 0;
+    width: 184px;
+    border-right: 1px solid #ececec;
+
+    &:nth-of-type(2n) {
+      width: 245px;
+      padding-left: 35px;
+      border-right: none;
+    }
   }
 
   .site-list__item-link {

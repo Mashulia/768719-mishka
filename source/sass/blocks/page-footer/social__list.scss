@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
   @include reset-list();
-  padding: 25px 55px;
+  padding: 23px 60px;
   border-bottom: 2px solid #ececec;
 }
 
@@ -13,16 +14,30 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
-    width: 145px;
-    padding: 0;
+  .social {
+    width: 140px;
+    padding-top: 7px;
   }
-}
 
-
-@media (min-width: $desktop-width) {
   .social__list {
-    width: 145px;
     padding: 0;
+    border-bottom: none;
+  }
+
+  .social__list-item {
+    width: 20px;
+  }
+
+  .social__list-icon {
+    &:hover,
+    &:focus {
+      path {
+        fill: $pretty-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

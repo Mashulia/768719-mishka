@@ -1,5 +1,6 @@
 .features {
   padding: 30px;
+  padding-top: 26px;
 }
 
 .features__title {
@@ -10,15 +11,69 @@
   @include reset-list();
 }
 
-.features__list-item {
+.features__item-text {
+  @include reset-indents();
+}
+
+.features__item-picture {
+  position: absolute;
+  top: 2px;
+
+  path {
+    fill: $pretty-color;
+  }
+}
+
+.features__item {
+  position: relative;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 83px;
+  padding-top: 55px;
+  margin-bottom: 28px;
+
+  &--flower {
+    left: 8px;
+    width: 32px;
+    height: 37px;
+  }
+
+  &--money {
+    width: 47px;
+    height: 27px;
+  }
+
+  &--heart {
+    top: 9px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+  }
+
+  &--ball {
+    top: 5px;
+    left: 3px;
+    width: 35px;
+    height: 34px;
+  }
+
+  &--rocket {
+    top: 7px;
+    left: -5px;
+    width: 55px;
+    height: 23px;
+  }
+
+  &--gift {
+    top: 5px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .features {
-    padding: 50px 55px 15px 50px;
+    padding: 43px 55px 25px 50px;
   }
 
   .features__title {
@@ -31,30 +86,37 @@
     justify-content: space-between;
   }
 
-  .features__list-item {
+  .features__item {
     width: 327px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 
-    &--present {
-      order: 6;
-    }
+  .features__item-gift {
+    order: 6;
+  }
 
-    &--heart {
-      order: 5;
-    }
+  .features__item-heart {
+    order: 5;
+  }
 
-    &--racket {
-      order: 4;
-    }
+  .features__item-rocket {
+    order: 4;
+  }
 
-    &--flag {
-      order: 4;
-    }
+  .features__item-money {
+    order: 4;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 66px 225px 15px 225px;
+    padding: 54px 225px 33px 225px;
+  }
+
+  .features__item {
+    width: 348px;
+    margin-bottom: 58px;
   }
 }

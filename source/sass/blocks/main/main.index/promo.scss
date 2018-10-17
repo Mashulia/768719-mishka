@@ -1,5 +1,6 @@
 .promo {
-  padding: 30px;
+  position: relative;
+  padding: 27px 30px 40px 30px;
 }
 
 .promo__title {
@@ -8,7 +9,7 @@
 
 .promo__offer {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   color: $pretty-color;
@@ -19,6 +20,25 @@
   @include reset-indents();
   margin-bottom: 20px;
   font-weight: normal;
+}
+
+.promo__wrapper-body {
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: 1px;
+    opacity: 0.6;
+  }
 }
 
 .promo__list {
@@ -35,18 +55,14 @@
 
 .promo__list-item {
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
 .promo__right-column {
   margin: 0;
   padding: 0;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+  margin-bottom: 20px;
 }
 
 .promo__image {
@@ -55,10 +71,11 @@
 }
 
 .promo__bottom {
+  order: 2;
+
   @include reset-indents();
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
 }
 
 .promo__bottom-price {
@@ -69,14 +86,14 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 50px;
+    padding: 34px 50px 75px 50px;
   }
 
   .promo__wrapper-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 49px;
   }
 
   .promo__offer {
@@ -84,123 +101,116 @@
     line-height: 17px;
     text-align: center;
     margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .promo__offer-description {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .promo__title {
+    margin-bottom: 0;
     width: 440px;
   }
 
-  .promo__list {
-    margin-bottom: 60px;
-  }
-
   .promo__wrapper-body {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    &::after {
+      bottom: 5px;
+      background-size: auto 100%;
+      background-position-x: 20px;
+      height: 17px;
+    }
   }
 
   .promo__left-column {
-    width: 290px;
-  }
-
-  .promo__right {
-    width: 333px;
+    width: 280px;
   }
 
   .promo__right-column {
-    &--tablet {
-      display: block;
-    }
-
-    &--desktop,
-    &--mobile {
-      display: none;
-    }
+    margin-bottom: 0;
+    width: 334px;
   }
 
-  .promo__image {
-    width: 333px;
-    height: 404px;
-  }
-
-  .promo__price {
-    margin-bottom: 30px;
+  .promo__bottom-price {
+    margin-bottom: 35px;
     font-size: 20px;
   }
 
   .promo__bottom {
     margin-bottom: 0;
+    width: 290px;
+    margin-top: -20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 130px 50px 70px 50px;
+    padding: 125px 50px 100px 50px;
   }
 
   .promo__wrapper-header {
     position: relative;
-    width: 750px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
+    justify-content: flex-start;
   }
 
   .promo__offer {
     margin-bottom: 0;
-    margin-left: 45px;
-    margin-right: 55px;
-    width: 75px;
+    padding-left: 45px;
+    padding-right: 55px;
+    width: 175px;
     line-height: 17px;
     text-align: center;
   }
 
   .promo__title {
-    width: 875px;
+    width: 525px;
     order: 2;
   }
 
   .promo__list {
-    margin-bottom: 110px;
+    margin-bottom: 154px;
   }
 
   .promo__wrapper-body {
     display: flex;
+
+    &::after {
+      background-position-x: 25px;
+      height: 21px;
+    }
   }
 
   .promo__left-column {
     width: 290px;
     margin-left: 175px;
-    margin-right: 60px;
-  }
-
-  .promo__right {
-    width: 525px;
   }
 
   .promo__right-column {
-    &--tablet,
-    &--mobile {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    width: 525px;
+    margin-top: -170px;
   }
 
-  .promo__image {
-    width: 525px;
-    height: 636px;
-    margin-top: -170px;
+  .promo__offer-description {
+    width: 280px;
+    margin-bottom: 48px;
   }
 
   .promo__price {
     margin-bottom: 35px;
     font-size: 20px;
+  }
+
+  .promo__bottom {
+    margin-bottom: 0;
+    margin-left: 175px;
+    margin-top: -45px;
+    width: 290px;
   }
 }
