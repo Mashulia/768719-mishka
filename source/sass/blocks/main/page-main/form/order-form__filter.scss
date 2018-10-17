@@ -212,6 +212,11 @@
     akign-self: center;
   }
 
+  .order-form__wrapper {
+    display: flex;
+    padding: 69px 50px 60px 50px;
+  }
+
   .order-form__filter-list {
     width: 740px;
   }
@@ -223,6 +228,10 @@
       width: 215px;
       margn-left: 60px;
     }
+  }
+
+  .order-form__filter-option {
+    margin-bottom: 53px;
   }
 
   .order-form__filter--color .order-form__filter-option:nth-last-child(3) {
