@@ -34,6 +34,32 @@
   }
 }
 
+.order-form__appointment-wrapper {
+  position: relative;
+}
+
+.order-form__appointment-icon {
+  position: absolute;
+
+  path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  &--phone {
+    top: 32px;
+    right: 8px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--letter {
+    top: 34px;
+    right: 0;
+    width: 42px;
+    height: 32px;
+  }
+}
+
 .order-form__appointment-clarification-text {
   display: block;
   margin-bottom: 32px;
@@ -133,6 +159,22 @@
     }
   }
 
+  .order-form__appointment-icon {
+    &:hover path {
+      fill: $pretty-color;
+    }
+
+    &--phone {
+      top: -7px;
+      right: 73px;
+    }
+
+    &--letter {
+      top: -7px;
+      right: 65px;
+    }
+  }
+
   .order-form__appointment-clarification {
     display: flex;
     justify-content: space-between;
@@ -176,6 +218,18 @@
 
   .order-form__appointment-list {
     margin-bottom: 5px;
+  }
+
+  .order-form__appointment-icon {
+    &--phone {
+      top: -5px;
+      right: 232px;
+    }
+
+    &--letter {
+      top: -6px;
+      right: 223px;
+    }
   }
 
   .order-form__appointment-clarification {

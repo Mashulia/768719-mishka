@@ -36,18 +36,6 @@
     opacity: 0.3;
   }
 
-  &--tel {
-    background-image: url("../img/icon-phone.svg");
-    background-position: 229px 7px;
-    background-repeat: no-repeat;
-  }
-
-  &--letter {
-    background-image: url("../img/icon-mail.svg");
-    background-position: 226px 7px;
-    background-repeat: no-repeat;
-  }
-
   &--text {
     padding: 15px;
     min-height: 142px;
@@ -90,20 +78,13 @@
     margin-bottom: 0;
   }
 
+  .order-form__wrapper-input,
   .order-form__input {
     width: 500px;
+  }
 
-    &--tel {
-      background-position: 448px 0;
-    }
-
-    &--letter {
-      background-position: 445px -4px;
-    }
-
-    &--text {
-      margin-top: -20px;
-    }
+  .order-form__input--text {
+    margin-top: -20px;
   }
 }
 
@@ -116,20 +97,15 @@
     padding: 0 225px;
   }
 
-  .order-form__input {
-    &--tel,
-    &--letter,
-    &--text {
-      width: 700px;
-      margin-right: 175px;
-    }
+  .order-form__wrapper-input,
+  .order-form__input--tel,
+  .order-form__input--letter,
+  .order-form__input--text {
+    width: 700px;
+  }
 
-    &--tel {
-      background-position: 665px 0;
-    }
-
-    &--letter {
-      background-position: 663px -4px;
-    }
+  .order-form__wrapper-input,
+  .order-form__input--text {
+    margin-right: 175px;
   }
 }
