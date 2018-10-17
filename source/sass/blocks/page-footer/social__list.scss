@@ -27,4 +27,17 @@
   .social__list-item {
     width: 20px;
   }
+
+  .social__list-icon {
+    &:hover,
+    &:focus {
+      path {
+        fill: $pretty-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

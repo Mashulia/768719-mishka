@@ -27,6 +27,17 @@
     display: block;
     width: 102px;
     height: 34px;
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $pretty-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
