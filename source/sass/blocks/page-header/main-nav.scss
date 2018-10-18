@@ -140,16 +140,22 @@
   }
 
   .main-nav__logo {
-    padding: 19px 0 19px 50px;
+    padding: 22px 0 13px 50px;
     width: 320px;
     order: -3;
     text-align: left;
     border-bottom: none;
   }
 
-  .main-nav__logo-image:hover,
-  .main-nav__logo-image:focus {
-    opacity: 0.6;
+
+  .main-nav__logo-image {
+    width: 113px;
+    height: 46px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
     &:active {
       opacity: 0.3;
@@ -166,15 +172,20 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    padding: 20px;
-    width: 245px;
+    padding: 0;
+    width: 228px;
     text-align: left;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__delivery {
     display: block;
     width: 280px;
-    padding: 12px 50px 15px 0;
+    padding: 17px 50px 15px 0;
     margin-left: auto;
   }
 }
