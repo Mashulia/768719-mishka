@@ -82,10 +82,7 @@
     &:hover .user-list__item-cart,
     &:focus .user-list__item-cart {
       opacity: 1;
-
-      path {
-        fill: $pretty-color;
-      }
+      fill: $pretty-color;
     }
 
     &:active .user-list__item-search,
