@@ -160,10 +160,6 @@
   }
 
   .order-form__appointment-icon {
-    &:hover path {
-      fill: $pretty-color;
-    }
-
     &--phone {
       top: -7px;
       right: 73px;

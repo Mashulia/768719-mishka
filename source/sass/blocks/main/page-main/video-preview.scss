@@ -96,27 +96,15 @@
 
   .video-preview__resource-icon {
     top: 48%;
+    outline: none;
 
-    &:hover,
-    &:focus {
+    &:hover svg,
+    &:focus svg {
       transform: scale(1.2);
+
     }
 
-    &:active {
-      transform: scale(0.8);
-      opacity: 0.3;
-    }
-  }
-
-  .video-preview__resource-icon svg {
-    top: 49%;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
-
-    &:active {
+    &:active svg {
       transform: scale(0.8);
       opacity: 0.3;
     }

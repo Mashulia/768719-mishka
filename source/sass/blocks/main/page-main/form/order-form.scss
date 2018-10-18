@@ -57,6 +57,15 @@
   &:active {
     color: #444444;
   }
+
+  .order-form__input--tel:hover .order-form__appointment-icon--tel,
+  .order-form__input--tel:focus .order-form__appointment-icon--tel,
+  .order-form__input--letter:hover .order-form__appointment-icon--letter,
+  .order-form__input--letter:focus .order-form__appointment-icon--letter {
+    path {
+      fill: $pretty-color;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
