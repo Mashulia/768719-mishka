@@ -86,6 +86,15 @@
   .order-form__input--text {
     margin-top: -20px;
   }
+
+  .order-form__input--tel:hover,
+  .order-form__input--tel:focus,
+  .order-form__input--letter:hover,
+  .order-form__input--letter:focus {
+    & ~ .order-form__appointment-icon path {
+      fill: $pretty-color;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

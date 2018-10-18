@@ -83,6 +83,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
     &::after {
       bottom: 5px;
       background-size: auto 100%;
@@ -92,10 +97,11 @@
   }
 
   .reviews__title {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 
   .reviews__list-text {
+    width: 650px;
     font-size: 17px;
     margin-bottom: 57px;
   }
@@ -153,6 +159,11 @@
   .reviews__wrapper {
     padding: 70px 0 188px 175px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
     &::after {
       background-position-x: 25px;
       height: 21px;
@@ -161,7 +172,7 @@
 
   .reviews__list-text {
     margin-bottom: 38px;
-    width: 725px;
+    width: 750px;
   }
 
   .reviews__switch {
@@ -171,7 +182,7 @@
   }
 
   .reviews__button {
-    top: 13%;
+    top: 14%;
     right: 0;
   }
 }
