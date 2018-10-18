@@ -69,9 +69,11 @@
     font-size: 17px;
   }
 
-  .user-list__item-link:hover,
-  .user-list__item-link:focus {
-    color: rgba(0, 0, 0, 0.6);
+  .user-list__item-link {
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);

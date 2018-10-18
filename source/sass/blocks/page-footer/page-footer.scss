@@ -30,9 +30,7 @@
 
     &:hover,
     &:focus {
-      path {
-        fill: $pretty-color;
-      }
+      fill: $pretty-color;
     }
 
     &:active {
