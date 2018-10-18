@@ -87,11 +87,11 @@
     margin-top: -20px;
   }
 
-  .order-form__input--tel:hover .order-form__appointment-icon--tel,
-  .order-form__input--tel:focus .order-form__appointment-icon--tel,
-  .order-form__input--letter:hover .order-form__appointment-icon--letter,
-  .order-form__input--letter:focus .order-form__appointment-icon--letter {
-    path {
+  .order-form__input--tel:hover,
+  .order-form__input--tel:focus,
+  .order-form__input--letter:hover,
+  .order-form__input--letter:focus {
+    & ~ .order-form__appointment-icon path {
       fill: $pretty-color;
     }
   }
