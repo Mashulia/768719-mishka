@@ -23,10 +23,7 @@
 .copyright__logo {
   width: 32px;
   height: 37px;
-
-  path {
-    fill: $pretty-color;
-  }
+  fill: $pretty-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,9 +34,7 @@
 
   .copyright__logo:hover,
   .copyright__logo:focus {
-    path {
-      color: #46c1ae;
-    }
+    color: #46c1ae;
   }
 
   .copyright__logo:active {
