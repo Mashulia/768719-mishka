@@ -91,7 +91,7 @@
   .order-form__input--tel:focus,
   .order-form__input--letter:hover,
   .order-form__input--letter:focus {
-    & ~ .order-form__appointment-icon path {
+    & ~ .order-form__appointment-icon {
       fill: $pretty-color;
     }
   }

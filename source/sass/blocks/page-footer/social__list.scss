@@ -9,6 +9,23 @@
   border-bottom: 2px solid #ececec;
 }
 
+.social__list-link {
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 29px;
+  }
+
+  &--twitter {
+    width: 24px;
+    height: 20px;
+  }
+}
+
 .social__list-item {
   width: 25px;
 }
@@ -31,9 +48,7 @@
   .social__list-icon {
     &:hover,
     &:focus {
-      path {
-        fill: $pretty-color;
-      }
+      fill: $pretty-color;
     }
 
     &:active {

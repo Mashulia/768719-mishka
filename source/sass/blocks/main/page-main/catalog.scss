@@ -126,14 +126,11 @@
     &:hover,
     &:focus {
       opacity: 1;
+      fill: $pretty-color;
+    }
 
-      path {
-        fill: $pretty-color;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
     }
   }
 

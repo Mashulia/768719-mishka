@@ -67,11 +67,11 @@
     display: block;
     padding: 30px 50px 34px 0;
     font-size: 17px;
-  }
 
-  .user-list__item-link:hover,
-  .user-list__item-link:focus {
-    color: rgba(0, 0, 0, 0.6);
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
@@ -82,10 +82,7 @@
     &:hover .user-list__item-cart,
     &:focus .user-list__item-cart {
       opacity: 1;
-
-      path {
-        fill: $pretty-color;
-      }
+      fill: $pretty-color;
     }
 
     &:active .user-list__item-search,
