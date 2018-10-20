@@ -12,7 +12,6 @@
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
     margin-top: -60px;
-    border-top: 1px solid #ececec;
   }
 
   .page-main__title {
@@ -21,6 +20,7 @@
     padding: 95px 75px;
     font-size: 43px;
     line-height: 50px;
+    border-top: 1px solid #ececec;
 
     &::after {
       content: "";

@@ -54,7 +54,6 @@
   .services {
     position: relative;
     background-color: #f9f9f9;
-    border-top: 1px solid #ececec;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
     margin-top: -60px;
@@ -74,6 +73,10 @@
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px auto;
     }
+  }
+
+  .services__title-wrapper {
+    border-top: 1px solid #ececec;
   }
 
   .services__title {
