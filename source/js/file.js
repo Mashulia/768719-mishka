@@ -1,6 +1,7 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var promoButton = document.querySelectorAll('.promo__button');
+var promoButton = document.querySelectorAll('.promo__button');
 var catalogButton = document.querySelectorAll('.catalog__cart');
 var popup = document.querySelector('.modal');
 var overlay = document.querySelector('.modal__overlay');
