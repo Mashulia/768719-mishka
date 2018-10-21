@@ -48,6 +48,11 @@
   background-color: transparent;
 }
 
+.video-preview__resource-icon {
+  --color-1: $pretty-color;
+  --color-2: #ffffff;
+}
+
 .video-preview__info {
   padding: 0 34px;
 }

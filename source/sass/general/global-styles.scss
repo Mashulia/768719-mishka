@@ -59,3 +59,9 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
