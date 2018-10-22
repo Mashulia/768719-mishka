@@ -19,10 +19,10 @@ navToggle.addEventListener('click', function () {
 for (var i = 0; i < buyButton.length; i++) {
   buyButton[i].addEventListener("click", function(event) {
     event.preventDefault();
-    modal.classList.toggle('modal--closed');
+    modal.classList.toggle('modal--show');
   });
 }
 
 modalOverlay.addEventListener('click', function(event) {
-  modal.classList.add('modal--closed');
+  modal.classList.add('.modal__overlay--show');
 });
