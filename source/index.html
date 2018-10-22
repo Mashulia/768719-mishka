@@ -117,7 +117,7 @@
           </div>
           <p class="promo__bottom">
             <b class="promo__bottom-price">Цена: 990 руб.</b>
-            <a class="promo__button button" href="#decoration.html">Заказать</a>
+            <a class="promo__button button js-modal" href="#decoration.html">Заказать</a>
           </p>
           <p class="promo__right-column">
             <picture>
@@ -287,7 +287,8 @@
       </div>
     </footer>
 
-    <section class="modal modal--show container">
+
+    <section class="modal modal-closed container">
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__label">Выберите размер:</p>
@@ -309,7 +310,7 @@
       </form>
     </section>
 
-    <div class="modal__overlay"></div>
+    <div class="modal__overlay modal-closed"></div>
 
     <!-- <script src="js/file.js"></script> -->
   </body>
