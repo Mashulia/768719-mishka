@@ -5,7 +5,7 @@
     <title>Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js"></script>
   </head>
   <body>
@@ -288,7 +288,8 @@
     </footer>
 
 
-    <section class="modal modal-show container">
+    <section class="modal">
+      <div class="modal__overlay"></div>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__label">Выберите размер:</p>
@@ -310,7 +311,6 @@
       </form>
     </section>
 
-    <div class="modal__overlay modal__overlay-show"></div>
     <script src="js/file.js"></script>
   </body>
 </html>
