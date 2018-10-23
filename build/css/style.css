@@ -382,8 +382,10 @@ svg path {
 
 .modal__form {
   position: fixed;
-  top: 25%;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 1200;
   margin: auto;
   padding: 30px;
@@ -449,7 +451,6 @@ svg path {
 
 @media (min-width: 768px) {
   .modal__form {
-    left: 16%;
     width: 568px;
     padding: 49px 110px; }
   .modal__title {
@@ -468,7 +469,6 @@ svg path {
 
 @media (min-width: 1150px) {
   .modal__form {
-    left: 30%;
     padding: 38px 110px;
     padding-bottom: 45px; }
   .modal__label {

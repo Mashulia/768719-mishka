@@ -21,11 +21,6 @@ link.addEventListener('click', function (evt) {
   popup.classList.add('modal-show');
 });
 
-body.addEventListener('keydown', function (evt) {
-  evt.preventDefault();
-  popup.classList.remove('modal-show');
-});
-
 window. addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
