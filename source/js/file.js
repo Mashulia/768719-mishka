@@ -21,13 +21,15 @@ link.addEventListener('click', function (evt) {
   popup.classList.add('modal-show');
 });
 
-if (popup){
-  var buyButton = document.querySelector('.js-buy--modal');
-  for(var i = 0; i < buyButton.length; i++) {
-    buyButton[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal--show");
-    });
+window.onload = function () {
+  if (popup){
+    var buyButton = document.querySelector('.js-buy--modal');
+    for(var i = 0; i < buyButton.length; i++) {
+      buyButton[i].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal--show");
+      });
+    }
   }
 }
 
@@ -45,4 +47,3 @@ overlay.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
 });
-
