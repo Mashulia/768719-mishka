@@ -417,20 +417,16 @@ svg path {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .modal__list--input {
-    display: block;
-    padding: 15px 30px;
-    width: 80px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 16px;
-    border: 2px solid #ececec; }
-    .modal__list--input--active {
-      border: 2px solid #63d1bb; }
-    .modal__list--input:hover, .modal__list--input:focus {
-      border-color: #c7c7c7; }
-    .modal__list--input:active {
-      border-color: #63d1bb; }
+
+.modal__list-label {
+  display: block;
+  padding: 15px 30px;
+  width: 80px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  border: 2px solid #ececec;
+  cursor: pointer; }
 
 .modal__label {
   margin: 0;
@@ -443,7 +439,8 @@ svg path {
 .button.modal__button {
   color: #ffffff;
   background-color: #63d1bb;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   .button.modal__button:hover, .button.modal__button:focus {
     background-color: #59d5bc; }
   .button.modal__button:active {
@@ -460,8 +457,12 @@ svg path {
     width: 351px;
     font-size: 30px;
     line-height: 57px; }
-  .modal__list--input {
+  .modal__list-label {
     padding: 16px 55px; }
+    .modal__list-label:hover {
+      border-color: #63d1bb; }
+  .modal__list-input:checked + .modal__list-label {
+    border: 2px solid #63d1bb; }
   .modal__label {
     font-size: 17px; } }
 

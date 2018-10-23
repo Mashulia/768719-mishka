@@ -53,8 +53,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
 
-  &--input {
+ .modal__list-label {
     display: block;
     padding: 15px 30px;
     width: 80px;
@@ -62,20 +63,7 @@
     font-size: 17px;
     line-height: 16px;
     border: 2px solid #ececec;
-
-    &--active {
-      border: 2px solid $pretty-color;
-    }
-
-    &:hover,
-    &:focus {
-      border-color: #c7c7c7;
-    }
-
-    &:active {
-      border-color: $pretty-color;
-    }
-  }
+    cursor: pointer;
 }
 
 .modal__label {
@@ -90,6 +78,7 @@
   color: #ffffff;
   background-color: $pretty-color;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -116,10 +105,16 @@
     line-height: 57px;
   }
 
-  .modal__list {
-    &--input {
-      padding: 16px 55px;
+  .modal__list-label {
+    padding: 16px 55px;
+
+    &:hover {
+      border-color: $pretty-color;
     }
+  }
+
+  .modal__list-input:checked + .modal__list-label {
+    border: 2px solid $pretty-color;
   }
 
   .modal__label {

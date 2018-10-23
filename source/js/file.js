@@ -2,7 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var link = document.querySelector('.js-modal');
 var popup = document.querySelector('.modal');
-// var close = popup.querySelector('.modal-close');
+var overlay = document.querySelector(".modal__overlay");
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -21,10 +21,10 @@ link.addEventListener('click', function (evt) {
   popup.classList.add('modal-show');
 });
 
-// close.addEventListener('click', function (evt) {
-//   evt.preventDefault();
-//   popup.classList.remove('modal-show');
-// });
+body.addEventListener('keydown', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-show');
+});
 
 window. addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
@@ -35,3 +35,9 @@ window. addEventListener('keydown', function (evt) {
     }
   }
 });
+
+overlay.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-show');
+});
+
