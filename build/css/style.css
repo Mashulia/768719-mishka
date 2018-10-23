@@ -1634,7 +1634,7 @@ iframe {
     .page-main__title::after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
       left: 0;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
@@ -1652,7 +1652,7 @@ iframe {
     padding-top: 94px;
     padding-bottom: 100px; }
     .page-main__title::after {
-      height: 17px; } }
+      height: 18px; } }
 
 .title-catalog {
   margin: 0;
@@ -1829,7 +1829,7 @@ iframe {
 
 .video-preview__resource-button {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 50%;
   width: 101px;
   height: 77px;
@@ -1837,11 +1837,21 @@ iframe {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border: none;
-  background-color: transparent; }
-
-.video-preview__resource-icon {
-  --color-1: $pretty-color;
-  --color-2: #ffffff; }
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+  .video-preview__resource-button:hover, .video-preview__resource-button:focus {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2); }
+  .video-preview__resource-button:active {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3; }
 
 .video-preview__info {
   padding: 0 34px; }
@@ -1881,17 +1891,6 @@ iframe {
             order: -1;
     margin-bottom: 13px;
     min-height: 455px; }
-  .video-preview__resource-button {
-    top: 48%;
-    outline: none; }
-    .video-preview__resource-button:hover .video-preview__resource-icon,
-    .video-preview__resource-button:focus .video-preview__resource-icon {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
-    .video-preview__resource-button:active .video-preview__resource-icon {
-      -webkit-transform: scale(0.8);
-              transform: scale(0.8);
-      opacity: 0.3; }
   .video-preview__title {
     width: 350px;
     padding-left: 90px;
@@ -1941,9 +1940,6 @@ iframe {
     margin-bottom: 0; }
   .video-preview__resource-image {
     margin-bottom: 0; }
-  .video-preview__resource-button {
-    top: 48%;
-    left: 50%; }
   .video-preview__description {
     padding: 0;
     margin-bottom: 45px; }

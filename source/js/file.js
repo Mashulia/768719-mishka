@@ -21,6 +21,16 @@ link.addEventListener('click', function (evt) {
   popup.classList.add('modal-show');
 });
 
+if (popup){
+  var buyButton = document.querySelector('.js-buy--modal');
+  for(var i = 0; i < buyButton.length; i++) {
+    buyButton[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal--show");
+    });
+  }
+}
+
 window. addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();

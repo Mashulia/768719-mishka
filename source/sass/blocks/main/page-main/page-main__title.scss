@@ -25,7 +25,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
       left: 0;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     padding-bottom: 100px;
 
     &::after {
-      height: 17px;
+      height: 18px;
     }
   }
 }
