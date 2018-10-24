@@ -1,7 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var link = document.querySelector('.js-modal');
-var buyButton = document.querySelector('.catalog__modal');
+var link = document.querySelectorAll('.js-modal');
 var popup = document.querySelector('.modal');
 var overlay = document.querySelector(".modal__overlay");
 
@@ -17,18 +16,11 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-link.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.add('modal-show');
-});
-
-if (buyButton) {
-  for(var i = 0; i < buyButton.length; i++) {
-    buyButton[i].onclick = function (evt) {
-      evt.preventDefault();
-      popup.classList.add('modal-show');
-    };
-  }
+for(var i = 0; i < link.length; i++) {
+  link[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popup.classList.add('modal-show');
+  });
 }
 
 window. addEventListener('keydown', function (evt) {
