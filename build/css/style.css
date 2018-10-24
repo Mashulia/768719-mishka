@@ -1001,7 +1001,7 @@ svg path {
   .services {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-color: #f9f9f9;
-    margin-top: -64px; } }
+    margin-top: -68px; } }
   @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
     .services {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -2550,15 +2550,15 @@ iframe {
   width: 27px;
   height: 34px;
   fill: #63d1bb; }
+  .copyright__logo:hover, .copyright__logo:focus {
+    fill: #46c1ae; }
+  .copyright__logo:active {
+    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .copyright {
     width: 183px;
     padding: 0; }
-  .copyright__logo:hover, .copyright__logo:focus {
-    color: #46c1ae; }
-  .copyright__logo:active {
-    opacity: 0.3; }
   .copyright__text:active {
     color: rgba(0, 0, 0, 0.3); } }
 

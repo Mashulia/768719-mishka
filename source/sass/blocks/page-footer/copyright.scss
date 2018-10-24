@@ -24,23 +24,21 @@
   width: 27px;
   height: 34px;
   fill: $pretty-color;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 183px;
     padding: 0;
-  }
-
-  .copyright__logo {
-    &:hover,
-    &:focus {
-      color: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .copyright__text:active {
