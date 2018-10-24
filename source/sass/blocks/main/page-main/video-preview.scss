@@ -174,10 +174,15 @@
 
   .video-preview__resource-image {
     margin-bottom: 0;
+    vertical-align: bottom;
   }
 
   .video-preview__resource-button {
     top: 50%;
+  }
+
+  .video-preview__button {
+    margin-bottom: 0;
   }
 
   .video-preview__description {
