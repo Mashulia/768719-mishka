@@ -62,17 +62,18 @@
 }
 
 .catalog__modal {
+  position: absolute;
+  top: 20px;
+  right: -3px;
+  opacity: 0.2;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .catalog__cart {
   width: 21px;
   height: 18px;
-  position: absolute;
-  top: 20px;
-  right: -3px;
-  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -125,7 +126,7 @@
     padding-bottom: 0;
   }
 
-  .catalog__cart {
+  .catalog__modal {
     top: 24px;
     right: 7px;
 

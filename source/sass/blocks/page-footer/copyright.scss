@@ -32,9 +32,12 @@
     padding: 0;
   }
 
-  .copyright__logo:hover,
-  .copyright__logo:focus {
-      color: #46c1ae;
+  .copyright__logo,
+  .copyright__logo {
+    &:hover,
+    &:focus {
+    color: #46c1ae;
+  }
 
     &:active {
       opacity: 0.3;

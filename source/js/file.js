@@ -3,7 +3,7 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var link = document.querySelector('.js-modal');
 var buyButton = document.querySelector('.catalog__modal');
 var popup = document.querySelector('.modal');
-// var overlay = document.querySelector(".modal__overlay");
+var overlay = document.querySelector(".modal__overlay");
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -24,10 +24,10 @@ link.addEventListener('click', function (evt) {
 
 if (buyButton) {
   for(var i = 0; i < buyButton.length; i++) {
-    buyButton[i].addEventListener('click', function (evt) {
+    buyButton[i].onclick = function (evt) {
       evt.preventDefault();
       popup.classList.add('modal-show');
-    });
+    };
   }
 }
 
