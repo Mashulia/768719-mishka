@@ -17,6 +17,7 @@ var uglify = require("gulp-uglify");
 var pump = require("pump");
 var server = require('browser-sync');
 var minify = require('gulp-minify');
+var htmlmin = require("gulp-htmlmin");
 var del = require('del');
 
 gulp.task('clean', function () {
@@ -81,6 +82,9 @@ gulp.task('sprite', function () {
 
 gulp.task('html', function () {
   return gulp.src('source/*html')
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(posthml([
       include()
     ]))
