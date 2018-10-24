@@ -8,7 +8,7 @@
 
 .main-nav__logo {
   display: block;
-  padding: 19px 30px;
+  padding: 19px 0;
   text-align: center;
   border-bottom: 1px solid #ececec;
 }
@@ -118,6 +118,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    padding: 0 50px;
     min-height: 0;
     z-index: 2;
   }
@@ -140,8 +141,8 @@
   }
 
   .main-nav__logo {
-    padding: 22px 0 13px 50px;
-    width: 320px;
+    padding: 22px 0 13px 0;
+    width: 219px;
     order: -3;
     text-align: left;
     border-bottom: none;
@@ -164,7 +165,7 @@
 
   .main-nav__delivery {
     display: block;
-    padding: 17px 50px 15px 0;
+    padding: 17px 0 15px 0;
     width: 333px;
     text-align: right;
   }
@@ -173,7 +174,8 @@
 @media (min-width: $desktop-width) {
   .main-nav__logo {
     padding: 0;
-    width: 228px;
+    padding-top: 10px;
+    width: 230px;
     text-align: left;
   }
 
@@ -185,7 +187,7 @@
   .main-nav__delivery {
     display: block;
     width: 280px;
-    padding: 17px 50px 15px 0;
+    padding: 17px 0 15px 0;
     margin-left: auto;
   }
 }

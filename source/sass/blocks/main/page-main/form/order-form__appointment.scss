@@ -15,9 +15,17 @@
     margin-bottom: 0;
   }
 
-  &--text:last-child .order-form__filter-title--appointment {
-    margin-bottom: 24px;
+  &--text:last-child {
+    padding-right: 60px;
+
+    & .order-form__filter-title--appointment {
+      margin-bottom: 24px;
+    }
   }
+}
+
+.order-form__wrapper-input {
+  padding-right: 60px;
 }
 
 .order-form__appointment-label {
@@ -26,8 +34,22 @@
   color: #000000;
 }
 
+.order-form__appointment-input--text {
+  padding: 15px;
+  min-height: 142px;
+  border: 2px solid #000000;
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $pretty-color;
+  }
+}
+
 .order-form__appointment-count {
   margin-bottom: 20px;
+  padding-right: 60px;
 
   &:last-child {
     margin-bottom: 0;
@@ -44,17 +66,21 @@
 
   &--phone {
     top: 32px;
-    right: 8px;
+    right: 68px;
     width: 25px;
     height: 24px;
   }
 
   &--letter {
     top: 34px;
-    right: 0;
+    right: 55px;
     width: 42px;
     height: 32px;
   }
+}
+
+.order-form__appointment-clarification {
+  padding-right: 60px;
 }
 
 .order-form__appointment-clarification-text {
@@ -79,13 +105,13 @@
       }
     }
 
-    &--text {
+    &:last-child {
       padding: 70px 50px 43px 50px;
     }
 
     &--tel {
       background-color: #f1f1f1;
-      padding-top: 70px;
+      padding-top: 69px;
     }
 
     &--e-mail {
@@ -118,6 +144,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 39px;
+    padding-right: 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -143,7 +170,11 @@
     padding-top: 0;
 
     &--text {
+      width: 500px;
       margin-top: -20px;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     &--name {
@@ -207,6 +238,15 @@
     &--middle-name {
       width: 575px;
     }
+
+    &--text {
+      width: 700px;
+    }
+  }
+
+
+  .order-form__appointment-item:last-child {
+    padding-right: 225px;
   }
 
   .order-form__appointment-list {
@@ -228,5 +268,9 @@
   .order-form__appointment-clarification {
     padding-left: 225px;
     padding-right: 225px;
+  }
+
+  .order-form__appointment-count {
+    margin-bottom: 41px;
   }
 }

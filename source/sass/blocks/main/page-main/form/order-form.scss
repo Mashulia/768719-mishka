@@ -1,9 +1,9 @@
-.order-form {
-  padding: 0 30px;
-}
-
 .form-title {
   margin-bottom: 23px;
+}
+
+.order-form {
+  padding: 0 30px;
 }
 
 .order-form__button {
@@ -13,7 +13,7 @@
 .order-form__description-slogan {
   margin: 0;
   margin-bottom: 25px;
-  padding-right: 15px;
+  padding-right: 78px;
   font-size: 13px;
   font-weight: normal;
 }
@@ -83,8 +83,9 @@
     width: 500px;
   }
 
-  .order-form__input--text {
+  .order-form__appointment-input--text {
     margin-top: -20px;
+    padding-top: 20px;
   }
 
   .order-form__input--tel:hover,
@@ -104,6 +105,7 @@
 
   .order-form__description {
     padding: 0 225px;
+    padding-bottom: 6px;
   }
 
   .order-form__wrapper-input,

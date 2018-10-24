@@ -29,8 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .promo-list {
-    width: 443px;
-    padding-left: 50px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,5 +39,9 @@
   .promo-list__item {
     width: 175px;
     padding: 21px 0;
+
+    &:nth-child(2n) {
+      padding-left: 45px;
+    }
   }
 }

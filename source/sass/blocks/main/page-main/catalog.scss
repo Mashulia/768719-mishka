@@ -21,7 +21,7 @@
 .catalog__price {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 28px;
   border-top: 1px solid #ececec;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   border: 1px solid #ececec;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .catalog__item-image {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .catalog__image {
@@ -61,6 +61,11 @@
   font-weight: normal;
 }
 
+.catalog__modal {
+  border: none;
+  background-color: transparent;
+}
+
 .catalog__cart {
   width: 21px;
   height: 18px;
@@ -71,10 +76,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__list {
-    padding: 0 50px;
-  }
-
   .title-catalog {
     width: 208px;
     font-size: 20px;
@@ -89,9 +90,14 @@
     }
   }
 
+  .catalog__list {
+    padding: 0 50px;
+  }
+
+
   .catalog__item {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 
     &:hover,
     &:focus {
