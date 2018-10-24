@@ -1,5 +1,5 @@
 .copyright {
-  padding: 15px 33px 25px 40px;
+  padding: 19px 38px 25px 40px;
 }
 
 .copyright__link {
@@ -21,24 +21,24 @@
 }
 
 .copyright__logo {
-  width: 32px;
-  height: 37px;
+  width: 27px;
+  height: 34px;
   fill: $pretty-color;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 183px;
     padding: 0;
-  }
-
-  .copyright__logo:hover,
-  .copyright__logo:focus {
-    color: #46c1ae;
-  }
-
-  .copyright__logo:active {
-    opacity: 0.3;
   }
 
   .copyright__text:active {
@@ -48,6 +48,6 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
-    margin-top: 3px;
+    padding-top: 5px;
   }
 }

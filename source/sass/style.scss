@@ -1,4 +1,4 @@
-@import "../css/normalize.css";
+@import "normalize.scss";
 @import "general/variables.scss";
 @import "general/mixins.scss";
 @import "general/global-styles.scss";
@@ -24,4 +24,3 @@
 @import "blocks/page-footer/page-footer.scss";
 @import "blocks/page-footer/social__list.scss";
 @import "blocks/page-footer/copyright.scss";
-// @import "../js/main-nav.js";

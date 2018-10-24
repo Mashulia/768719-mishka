@@ -1,37 +1,40 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .modal-show {
   display: block;
 }
 
 .modal__overlay {
-  display: none;
   position: fixed;
-  z-index: 999;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.modal__overlay--show {
-  display: block;
-}
-
-.modal {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  top: 20%;
-  left: 50%;
-  margin-left: -160px;
-  // height: 100%;
-  // transform: translate(-50%, -50%);
-  padding: 32px 0 45px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
 }
 
 .modal__form {
-  padding: 0 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1200;
+  margin: auto;
+  padding: 30px;
+  padding-bottom: 49px;
+  width: 320px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal__title {
@@ -47,33 +50,21 @@
 
 .modal__list {
   @include reset-list();
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
 
-  &--input {
-    display: block;
-    padding: 15px 30px;
-    width: 80px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 16px;
-    border: 2px solid #ececec;
-
-    &--active {
-      border: 2px solid $pretty-color;
-    }
-
-    &:hover,
-    &:focus {
-      border-color: #c7c7c7;
-    }
-
-    &:active {
-      border-color: $pretty-color;
-    }
-  }
+.modal__list-label {
+  display: block;
+  padding: 15px 30px;
+  width: 80px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  border: 2px solid #ececec;
+  cursor: pointer;
 }
 
 .modal__label {
@@ -88,6 +79,7 @@
   color: #ffffff;
   background-color: $pretty-color;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -101,13 +93,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal {
-    top: 30%;
-    padding: 0;
-    margin: 0 100px;
-  }
-
   .modal__form {
+    width: 568px;
     padding: 49px 110px;
   }
 
@@ -118,10 +105,16 @@
     line-height: 57px;
   }
 
-  .modal__list {
-    &--input {
-      padding: 16px 55px;
+  .modal__list-label {
+    padding: 16px 55px;
+
+    &:hover {
+      border-color: $pretty-color;
     }
+  }
+
+  .modal__list-input:checked + .modal__list-label {
+    border: 2px solid $pretty-color;
   }
 
   .modal__label {
@@ -130,10 +123,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .modal {
-    margin: 0 290px;
-  }
-
   .modal__form {
     padding: 38px 110px;
     padding-bottom: 45px;

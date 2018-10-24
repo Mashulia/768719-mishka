@@ -9,7 +9,7 @@
 
   @include reset-indents();
   display: block;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   padding-right: 20px;
   font-size: 17px;
   line-height: 16px;
@@ -47,7 +47,8 @@
 }
 
 .order-form__filter-option {
-  padding-left: 60px;
+  padding-left: 61px;
+  padding-right: 73px;
   margin-bottom: 20px;
 
   &:last-child {
@@ -224,7 +225,7 @@
 
   .order-form__wrapper {
     display: flex;
-    padding: 69px 50px 60px 50px;
+    padding: 67px 50px 59px 50px;
   }
 
   .order-form__filter-list {
@@ -232,7 +233,7 @@
   }
 
   .order-form__filter-option {
-    width: 350px;
+    width: 400px;
     margin-bottom: 53px;
 
     &--color {
@@ -243,5 +244,9 @@
     &--color:nth-last-child(3) {
       margin-bottom: 0;
     }
+  }
+
+  .order-form__filter-input--checkbox:checked + .order-form__color-label::after {
+    top: -6px;
   }
 }

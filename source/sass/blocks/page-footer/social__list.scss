@@ -5,7 +5,8 @@
   align-items: center;
 
   @include reset-list();
-  padding: 23px 60px;
+  padding: 25px 59px;
+  padding-bottom: 17px;
   border-bottom: 2px solid #ececec;
 }
 
@@ -33,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .social {
     width: 140px;
-    padding-top: 7px;
+    padding-top: 11px;
   }
 
   .social__list {

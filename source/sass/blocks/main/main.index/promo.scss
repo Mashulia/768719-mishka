@@ -9,7 +9,7 @@
 
 .promo__offer {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   font-size: 17px;
   line-height: 20px;
   color: $pretty-color;
@@ -18,7 +18,7 @@
 
 .promo__offer-description {
   @include reset-indents();
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   font-weight: normal;
   width: 249px;
 }
@@ -104,6 +104,7 @@
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
+    width: 300px;
   }
 
   .promo__title {
@@ -153,7 +154,7 @@
 
   .promo__wrapper-header {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     justify-content: flex-start;
   }
 
@@ -167,7 +168,7 @@
   }
 
   .promo__title {
-    width: 525px;
+    width: 550px;
     order: 2;
   }
 
