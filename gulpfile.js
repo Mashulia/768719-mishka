@@ -96,6 +96,7 @@ gulp.task("js", function (cb) {
   pump([
         gulp.src("source/js/*.js"),
         uglify(),
+        rename({suffix: ".min"}),
         gulp.dest("build/js")
     ],
     cb
