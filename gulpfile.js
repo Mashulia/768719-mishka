@@ -50,17 +50,18 @@ gulp.task('css', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('source/img/**/*.{jpg,png,svg}')
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
     .pipe(imagemin([
-      imagemin.optipng({
-        optimizationLevel: 1
-      }),
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.svgo()
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo({
+        plugins: [
+            {removeViewBox: false},
+            {convertColors: {shorthex: false}}
+        ]
+      })
     ]))
-    .pipe(gulp.dest('source/img'));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task('webp', function () {
@@ -68,7 +69,7 @@ gulp.task('webp', function () {
     .pipe(webp({
       quality: 75
     }))
-    .pipe(gulp.dest('source/img'));
+    .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('sprite', function () {
@@ -77,11 +78,11 @@ gulp.task('sprite', function () {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('source/img'));
 });
 
 gulp.task('html', function () {
-  return gulp.src('source/*html')
+  return gulp.src('source/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true
     }))

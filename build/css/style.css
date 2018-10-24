@@ -1181,7 +1181,7 @@ svg path {
     line-height: 17px;
     text-align: center; }
   .promo__title {
-    width: 525px;
+    width: 550px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
@@ -1654,7 +1654,7 @@ iframe {
     padding-top: 94px;
     padding-bottom: 100px; }
     .page-main__title::after {
-      height: 18px; } }
+      height: 20px; } }
 
 .title-catalog {
   margin: 0;
@@ -1986,6 +1986,7 @@ iframe {
   line-height: 18px;
   font-weight: normal;
   color: inherit;
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000; }
   .order-form__input::-webkit-input-placeholder {
