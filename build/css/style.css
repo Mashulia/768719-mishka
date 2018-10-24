@@ -2552,11 +2552,8 @@ iframe {
   .copyright {
     width: 183px;
     padding: 0; }
-  .copyright__logo:hover, .copyright__logo:focus,
-  .copyright__logo:hover,
-  .copyright__logo:focus {
+  .copyright__logo:hover, .copyright__logo:focus {
     color: #46c1ae; }
-  .copyright__logo:active,
   .copyright__logo:active {
     opacity: 0.3; }
   .copyright__text:active {
