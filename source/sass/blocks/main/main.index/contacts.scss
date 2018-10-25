@@ -8,7 +8,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -170,6 +170,7 @@ iframe {
     position: relative;
     padding: 140px 50px 100px 220px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -206,7 +207,12 @@ iframe {
   .contacts__wrapper-button {
     width: 240px;
     padding: 0;
+    position: relative;
+    top: -57px;
+    margin-left: 5px;
+  }
+
+  .contacts__button {
     position: absolute;
-    top: 75%;
   }
 }

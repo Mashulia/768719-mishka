@@ -32,10 +32,11 @@
 .catalog__list {
   @include reset-list();
   padding: 0 30px;
+  margin-bottom: 30px;
 }
 
 .catalog__item {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   border: 1px solid #ececec;
 }
 
@@ -64,7 +65,7 @@
 .catalog__modal {
   position: absolute;
   top: 20px;
-  right: -3px;
+  right: -9px;
   opacity: 0.2;
   border: none;
   background-color: transparent;
@@ -128,7 +129,7 @@
 
   .catalog__modal {
     top: 24px;
-    right: 7px;
+    right: 0;
 
     &:hover,
     &:focus {
