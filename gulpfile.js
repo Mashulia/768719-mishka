@@ -15,6 +15,7 @@ var posthml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var cheerio = require("gulp-cheerio");
 var server = require('browser-sync');
 var minify = require('gulp-minify');
 var htmlmin = require("gulp-htmlmin");
@@ -69,11 +70,17 @@ gulp.task('webp', function () {
 
 gulp.task('sprite', function () {
   return gulp.src('source/img/*.svg')
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+  .pipe(cheerio({
+            run: function ($) {
+                $('[fill]').removeAttr('fill');
+            },
+            parserOptions: { xmlMode: true }
+        }))
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('html', function () {
