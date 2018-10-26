@@ -32,20 +32,21 @@
 }
 
 .services__item-link {
-  position: relative;
-  display: block;
-  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: inherit;
   color: inherit;
 }
 
-.services__item-toy,
-.services__item-lamp {
-  position: absolute;
-  top: -5px;
-  left: 168px;
+.services__item-name {
   width: 130px;
-  text-align: right;
+  display: block;
+}
+
+.services__item-icon {
+  display: block;
+  width: 130px;
   opacity: 0.5;
   fill: #149080;
 }
@@ -102,14 +103,9 @@
     line-height: 30px;
   }
 
-  .services__item-lamp {
-    top: 2px;
-    left: 175px;
-  }
-
-  .services__item-toy {
-    top: 2px;
-    left: 168px;
+  .services__item-icon,
+  .services__item-name {
+    width: 167px;
   }
 
   .services__item:hover,
@@ -132,16 +128,13 @@
     bottom: 5px;
   }
 
-  .services__item:hover .services__item-lamp,
-  .services__item:focus .services__item-lamp,
-  .services__item:hover .services__item-toy,
-  .services__item:focus .services__item-toy {
+  .services__item:hover .services__item-icon,
+  .services__item:focus .services__item-icon {
     opacity: 0.7;
   }
 
   .services__item:active .services__item-name,
-  .services__item:active .services__item-lamp,
-  .services__item:active .services__item-toy {
+  .services__item:active .services__item-icon {
     opacity: 0.3;
   }
 }
@@ -177,12 +170,8 @@
     padding-bottom: 30px;
   }
 
-  .services__item-lamp {
-    left: 367px;
-  }
-
-  .services__item-toy {
-    top: 4px;
-    left: 358px;
+  .services__item-icon,
+  .services__item-name {
+    width: 175px;
   }
 }
