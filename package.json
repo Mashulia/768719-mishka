@@ -6,8 +6,8 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
-    "browser-sync": "2.24.x",
-    "gulp": "4.0.x",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-minify": "^3.1.0",
@@ -48,6 +48,8 @@
     "node": "8.12"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "gulp-cheerio": "^0.6.3",
     "gulp-htmlmin": "^5.0.1",
     "imagemin": "^6.0.0",
     "imagemin-webp": "^4.1.0",
