@@ -16,7 +16,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 50px;
+    padding: 50px;
+    padding-top: 44px;
   }
 
   .page-footer__logo {
@@ -46,7 +47,6 @@
   }
 
   .page-footer__wrapper {
-    padding: 46px;
-    padding-bottom: 60px;
+    padding: 43px 50px 60px;
   }
 }

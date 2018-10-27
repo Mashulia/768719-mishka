@@ -48,7 +48,7 @@
 }
 
 .order-form__appointment-count {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding-right: 60px;
 
   &:last-child {
@@ -227,16 +227,20 @@
   .order-form__appointment-sublist {
     width: 700px;
     margin-right: 175px;
+    padding-left: 8px;
+    padding-top: 3px;
   }
 
   .order-form__appointment-input {
+    padding-left: 16px;
+
     &--name {
-      width: 628px;
+      width: 621px;
     }
 
     &--surname,
     &--middle-name {
-      width: 575px;
+      width: 568px;
     }
 
     &--text {
@@ -245,8 +249,15 @@
   }
 
 
-  .order-form__appointment-item:last-child {
-    padding-right: 225px;
+  .order-form__appointment-item {
+
+    &:last-child {
+      padding-right: 225px;
+    }
+
+    &--tel {
+      padding-top: 67px;
+    }
   }
 
   .order-form__appointment-list {
@@ -261,13 +272,17 @@
 
     &--letter {
       top: -6px;
-      right: 223px;
+      right: 220px;
     }
   }
 
   .order-form__appointment-clarification {
     padding-left: 225px;
     padding-right: 225px;
+
+    &-text {
+      margin-top: 12px;
+    }
   }
 
   .order-form__appointment-count {

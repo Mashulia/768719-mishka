@@ -1,6 +1,7 @@
 .features {
   padding: 30px;
-  padding-top: 27px;
+  padding-bottom: 28px;
+  padding-top: 30px;
 }
 
 .features__title {
@@ -109,12 +110,16 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 54px 225px 33px 225px;
+    padding: 50px 225px 33px 225px;
   }
 
   .features__item {
     width: 348px;
     margin-bottom: 57px;
     padding-top: 54px;
+  }
+
+  .features__title {
+    margin-bottom: 47px;
   }
 }

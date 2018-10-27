@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  padding: 27px 30px 40px 30px;
+  padding: 29px 30px 40px 30px;
 }
 
 .promo__title {
@@ -9,7 +9,7 @@
 
 .promo__offer {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   color: $pretty-color;
@@ -18,7 +18,7 @@
 
 .promo__offer-description {
   @include reset-indents();
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   font-weight: normal;
   width: 249px;
 }
@@ -63,7 +63,7 @@
 .promo__right-column {
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .promo__bottom {
@@ -82,7 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 30px 50px 75px 50px;
+    padding: 35px 50px 75px 49px;
   }
 
   .promo__wrapper-header {
@@ -104,7 +104,7 @@
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
-    width: 300px;
+    width: 283px;
   }
 
   .promo__title {
@@ -149,12 +149,12 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 125px 50px 100px 50px;
+    padding: 106px 50px 100px 50px;
   }
 
   .promo__wrapper-header {
     position: relative;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     justify-content: flex-start;
   }
 

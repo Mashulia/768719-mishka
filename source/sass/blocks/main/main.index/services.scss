@@ -18,9 +18,8 @@
 .services__item {
   display: flex;
   justify-content: space-between;
-  font-size: 19px;
+
   color: #ffffff;
-  padding: 28px 30px;
 
   &--left-btn {
     background-color: $pretty-color;
@@ -35,20 +34,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: inherit;
+  font-size: 19px;
   color: inherit;
+  padding: 20px 29px 22px 30px;
 }
 
 .services__item-name {
   width: 130px;
   display: block;
+
 }
 
 .services__item-icon {
-  display: block;
-  width: 130px;
   opacity: 0.5;
   fill: #149080;
+
+
+  &--lamp {
+    width: 40px;
+    height: 62px;
+    margin-left: 84px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
+    margin-left: 73px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -98,14 +110,32 @@
   .services__item {
     flex-grow: 1;
     width: 334px;
-    padding: 27px 37px 46px 37px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .services__item-icon,
+
+  .services__item--left-btn .services__item-link {
+    padding: 26px 0 41px 37px;
+  }
+
+  .services__item--right-btn .services__item-link {
+    padding: 28px 37px 41px 37px;
+  }
+
   .services__item-name {
     width: 167px;
+  }
+
+  .services__item-icon {
+
+    &--lamp {
+      margin-left: 53px;
+    }
+
+    &--toy {
+      margin-left: 36px;
+    }
   }
 
   .services__item:hover,
@@ -143,7 +173,7 @@
   .services {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-color: #f9f9f9;
-    margin-top: -68px;
+    margin-top: -63px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -152,26 +182,40 @@
 
     &::after {
       height: 37px;
-      bottom: -17px;
-      background-position-x: 10px;
+      bottom: 0;
+      background-position-x: 32px;
     }
   }
 
   .services__title {
     width: 700px;
-    padding-top: 153px;
-    padding-bottom: 360px;
+    padding-top: 154px;
+    padding-bottom: 358px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .services__item {
     width: 525px;
-    padding-bottom: 30px;
   }
 
-  .services__item-icon,
+  .services__item--left-btn .services__item-link {
+    padding: 26px 0 49px 37px;
+  }
+
+  .services__item--right-btn .services__item-link {
+    padding: 28px 37px 49px 37px;
+  }
+
   .services__item-name {
     width: 175px;
+  }
+
+  .services__item-icon--lamp {
+    margin-left: 237px;
+  }
+
+  .services__item-icon--toy {
+    margin-left: 219px;
   }
 }

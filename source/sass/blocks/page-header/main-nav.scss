@@ -8,7 +8,8 @@
 
 .main-nav__logo {
   display: block;
-  padding: 19px 0;
+  padding-bottom: 14px;
+  padding-top: 22px;
   text-align: center;
   border-bottom: 1px solid #ececec;
 }
@@ -34,12 +35,12 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 25%;
+  top: 8px;
   right: 0;
   width: 20px;
   height: 2px;
   background-color: #000000;
-  box-shadow: 0 4px 0 0 #000000, 0 8px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 -6px 0 0 #000000;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -165,7 +166,7 @@
 
   .main-nav__delivery {
     display: block;
-    padding: 17px 0 15px 0;
+    padding: 13px 0 15px 0;
     width: 333px;
     text-align: right;
   }
