@@ -5,9 +5,11 @@
     <title>Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -49,7 +51,7 @@
                 <svg class="user-list__item-search" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                <span class="user-list__item-text user-list__item--link-visible">Поиск по сайту</span>
+                <span class="user-list__item-text user-list__item-visible">Поиск по сайту</span>
               </a>
             </li>
             <li class="user-list__item user-list__item--cart">
@@ -112,8 +114,8 @@
                 <td class="promo__list-value promo__list-item">25 см</td>
               </tr>
               <tr>
-                <td class="promo__list--option promo__list-item">Высота:</td>
-                <td class="promo__list--value promo__list-item">15 см</td>
+                <td class="promo__list-option promo__list-item">Высота:</td>
+                <td class="promo__list-value promo__list-item">15 см</td>
               </tr>
             </table>
           </div>
@@ -139,37 +141,37 @@
         <ul class="features__list">
           <li class="features__item features__item-flower">
             <p class="features__item-text">Экологически<br> чистые материалы</p>
-            <svg class="features__item-picture features__item--flower" width="32" height="37">
+            <svg class="features__item-picture features__item-picture--flower" width="32" height="37">
               <use xlink:href="#icon-feature-flower"></use>
             </svg>
           </li>
           <li class="features__item features__item-money">
             <p class="features__item-text">Скандинавский стиль<br> по российской цене</p>
-            <svg class="features__item-picture features__item--money" width="47" height="27">
+            <svg class="features__item-picture features__item-picture--money" width="47" height="27">
               <use xlink:href="#icon-feature-money"></use>
             </svg>
           </li>
           <li class="features__item features__item-heart">
             <p class="features__item-text">Увеличивает лайки<br> на фотографиях</p>
-            <svg class="features__item-picture  features__item--heart" width="34" height="27">
+            <svg class="features__item-picture  features__item-picture--heart" width="34" height="27">
               <use xlink:href="#icon-feature-heart"></use>
             </svg>
           </li>
           <li class="features__item features__item-ball">
             <p class="features__item-text">Связано вручную с<br> любовью и умилением</p>
-            <svg class="features__item-picture features__item--ball" width="35" height="34">
+            <svg class="features__item-picture features__item-picture--ball" width="35" height="34">
               <use xlink:href="#icon-feature-ball"></use>
             </svg>
           </li>
           <li class="features__item features__item-rocket">
             <p class="features__item-text">Поддержка отечественного<br> производителя</p>
-            <svg class="features__item-picture  features__item--rocket" width="55" height="23">
+            <svg class="features__item-picture  features__item-picture--rocket" width="55" height="23">
               <use xlink:href="#icon-feature-rocket"></use>
             </svg>
           </li>
           <li class="features__item features__item-gift">
             <p class="features__item-text">Поставляется в<br> подарочной упаковке</p>
-            <svg class="features__item-picture  features__item--gift" width="33" height="32">
+            <svg class="features__item-picture  features__item-picture--gift" width="33" height="32">
               <use xlink:href="#icon-feature-gift"></use>
             </svg>
           </li>
@@ -295,15 +297,15 @@
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__label">Выберите размер:</p>
         <ul class="modal__list">
-          <li class="modal__list--option">
+          <li class="modal__list-option">
             <input class="visually-hidden modal__list-input" type="radio" id="size-s" name="size" value="размер S" checked>
             <label class="modal__list-label" for="size-s">S</label>
           </li>
-          <li class="modal__list--option">
+          <li class="modal__list-option">
             <input class="visually-hidden modal__list-input" type="radio" id="size-m" name="size" value="размер M">
             <label class="modal__list-label" for="size-m">M</label>
           </li>
-          <li class="modal__list--option">
+          <li class="modal__list-option">
             <input class="visually-hidden modal__list-input" type="radio" id="size-l" name="size" value="размер L">
             <label class="modal__list-label" for="size-l">L</label>
           </li>

@@ -5,9 +5,19 @@ html {
   box-sizing: border-box;
 }
 
-// * {
-//   outline: 1px solid red;
-// }
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -31,21 +41,6 @@ img {
   height: auto;
 }
 
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 800;
-  font-style: bold;
-  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
-  font-display: swap;
-}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
