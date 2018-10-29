@@ -95,7 +95,6 @@
     &--text {
       display: flex;
       justify-content: space-between;
-      padding: 0 50px;
 
       & .order-form__wrapper {
         padding-bottom: 47px;
@@ -103,7 +102,9 @@
     }
 
     &:last-child {
-      padding: 70px 50px 43px 50px;
+      padding: 70px 0 43px 0;
+      width: 670px;
+      margin: 0 auto;
     }
 
     &--tel {
@@ -121,7 +122,8 @@
   .order-form__appointment-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    width: 670px;
+    margin: 0 auto;
   }
 
   .order-form__appointment-input--text {
@@ -183,21 +185,21 @@
   .order-form__appointment-icon {
     &--phone {
       top: -4px;
-      right: 76px;
+      right: 27px;
     }
 
     &--letter {
       top: -6px;
-      right: 63px;
+      right: 13px;
     }
   }
 
   .order-form__appointment-clarification {
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
+    width: 670px;
+    margin: 0 auto;
 
     &-text {
       margin-top: 10px;
@@ -219,7 +221,7 @@
     width: 700px;
     margin-right: 175px;
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 2px;
   }
 
   .order-form__appointment-input {
@@ -239,13 +241,16 @@
     }
   }
 
+  .order-form__appointment-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
   .order-form__appointment-item {
     &:last-child {
-      padding-right: 225px;
-    }
-
-    &--sublist {
-      padding-left: 45px;
+      padding-right: 175px;
+      width: 1050px;
+      margin: 0 auto;
     }
 
     &--tel {
@@ -263,18 +268,20 @@
   .order-form__appointment-icon {
     &--phone {
       top: -5px;
-      right: 232px;
+      right: 183px;
     }
 
     &--letter {
       top: -6px;
-      right: 220px;
+      right: 169px;
     }
   }
 
   .order-form__appointment-clarification {
-    padding-left: 225px;
-    padding-right: 225px;
+    padding-left: 175px;
+    padding-right: 175px;
+    width: 1050px;
+    margin: 0 auto;
 
     &-text {
       margin-top: 12px;

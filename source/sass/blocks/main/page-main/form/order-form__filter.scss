@@ -115,7 +115,7 @@
 @media (min-width: $tablet-width) {
   .order-form__filter {
     margin-bottom: 0;
-    padding: 71px 50px 62px 50px;
+    padding: 71px 0 62px 0;
 
     &--color {
       background-color: #f1f1f1;
@@ -159,6 +159,8 @@
 
   .order-form__wrapper {
     display: flex;
+    margin: 0 auto;
+    width: 670px;
   }
 
   .order-form__filter-option {
@@ -219,10 +221,10 @@
 
 @media (min-width: $desktop-width) {
     .order-form__filter {
-      padding: 72px 50px 60px 45px;
+      padding: 72px 0 60px 0;
 
       &--color {
-        padding: 67px 50px 62px 45px;
+        padding: 67px 0 62px 0;
       }
     }
 
@@ -246,7 +248,8 @@
   }
 
   .order-form__wrapper {
-    display: flex;
+    width: 1060px;
+    margin: 0 auto;
   }
 
   .order-form__filter-list {

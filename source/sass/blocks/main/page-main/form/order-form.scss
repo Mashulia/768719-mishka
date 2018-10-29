@@ -1,6 +1,7 @@
 .order-form {
-  margin: 0 auto;
   padding: 0 30px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .order-form__button {
@@ -44,17 +45,17 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
+    width: 100%;
     padding: 0;
   }
 
-  .order-form__description {
-    padding: 0 50px;
-  }
 
   .order-form__description-slogan {
+    margin: 0 auto;
+    width: 670px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 0;
+
   }
 
   .order-form__wrapper-input,
@@ -87,7 +88,8 @@
 
 @media (min-width: $desktop-width) {
   .order-form__description {
-    padding: 0 220px 0 225px;
+    width: 700px;
+    margin: 0 auto;
   }
 
   .order-form__description-slogan {

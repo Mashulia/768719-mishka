@@ -74,7 +74,7 @@
       height: 34px;
       width: 100%;
       position: absolute;
-      bottom: -10px;
+      bottom: -11px;
       left: 0;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: 775px 24px;
@@ -186,7 +186,7 @@
     &::after {
       height: 58px;
       bottom: -25px;
-      background-size: 1250px 34px;
+      background-size: auto 37px;
       background-position-x: 12px;
     }
   }

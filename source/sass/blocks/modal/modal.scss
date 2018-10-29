@@ -48,6 +48,13 @@
   background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   border-top: 1px solid #c6c6c6;
+
+  &--fix {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
 
 .modal__title {
@@ -126,18 +133,3 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .modal__form {
-//     padding: 38px 110px;
-//     padding-bottom: 45px;
-//   }
-
-//   .modal__label {
-//     margin-bottom: 20px;
-//   }
-
-//   .modal__button {
-//     padding-top: 16px;
-//     padding-bottom: 16px;
-//   }
-// }

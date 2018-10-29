@@ -1,7 +1,11 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 *,
 *::before,
-*::after,
-html {
+*::after {
   box-sizing: border-box;
 }
 
@@ -29,6 +33,7 @@ body {
   font-weight: bold;
   color: #444444;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {
