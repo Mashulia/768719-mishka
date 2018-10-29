@@ -16,12 +16,6 @@
   @include reset-indents();
 }
 
-.features__item-picture {
-  position: absolute;
-  top: 2px;
-  fill: $pretty-color;
-}
-
 .features__item {
   position: relative;
   font-size: 17px;
@@ -31,6 +25,10 @@
 }
 
 .features__item-picture {
+  position: absolute;
+  top: 2px;
+  fill: $pretty-color;
+
   &--flower {
     left: 8px;
     width: 32px;

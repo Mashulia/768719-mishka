@@ -127,8 +127,11 @@
   }
 
   .order-form__appointment-input--text {
+    width: 500px;
     margin-top: -20px;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .order-form__appointment-sublist {
@@ -162,15 +165,7 @@
 
   .order-form__appointment-input {
     font-size: 19px;
-    padding: 0 55px 9px 16px;;
-
-    &--text {
-      width: 500px;
-      margin-top: -20px;
-      padding-top: 15px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+    padding: 0 55px 9px 16px;
 
     &--name {
       width: 428px;

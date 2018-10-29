@@ -220,13 +220,13 @@
 }
 
 @media (min-width: $desktop-width) {
-    .order-form__filter {
-      padding: 72px 0 60px 0;
+  .order-form__filter {
+    padding: 72px 0 60px 0;
 
-      &--color {
-        padding: 67px 0 62px 0;
-      }
+    &--color {
+      padding: 67px 0 62px 0;
     }
+  }
 
   .order-form__filter-title {
     padding-top: 0;
