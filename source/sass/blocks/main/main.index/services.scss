@@ -72,13 +72,15 @@
 
     &::after {
       content: "";
-      height: 23px;
+      height: 34px;
       width: 100%;
       position: absolute;
-      bottom: 0;
+      bottom: -10px;
       left: 0;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 100%;
+      background-size: 775px 24px;
+      background-repeat: repeat-x;
+      background-position-x: 34px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -179,9 +181,10 @@
     }
 
     &::after {
-      height: 37px;
-      bottom: 0;
-      background-position-x: 32px;
+      height: 58px;
+      bottom: -25px;
+      background-size: 1250px 34px;
+      background-position-x: 12px;
     }
   }
 

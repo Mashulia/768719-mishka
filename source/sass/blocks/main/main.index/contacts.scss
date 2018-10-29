@@ -62,7 +62,7 @@
   z-index: -1;
 }
 
-iframe {
+.contacts__map-iframe {
   width: 100%;
   height: 457px;
   border: none;
@@ -181,6 +181,10 @@ iframe {
   .contacts__title::after {
     top: -9px;
     right: 360px;
+  }
+
+  .contacts__table {
+    margin-bottom: 80px;
   }
 
   .contacts__list {

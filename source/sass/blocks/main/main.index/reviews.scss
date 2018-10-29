@@ -89,10 +89,10 @@
     }
 
     &::after {
-      bottom: 5px;
-      background-size: auto 100%;
-      background-position-x: 100px;
-      height: 15px;
+      bottom: -10px;
+      background-size: 780px 16px;
+      height: 33px;
+      background-repeat: repeat-x;
     }
   }
 
@@ -166,8 +166,10 @@
     }
 
     &::after {
-      background-position-x: 25px;
-      height: 21px;
+      background-repeat: repeat-x;
+      background-size: 1040px 24px;
+      transform: rotate(180deg);
+      bottom: 11px;
     }
   }
 

@@ -1,0 +1,15 @@
+.form-title {
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+ .form-title {
+    margin-bottom: 60px;
+  }
+}
+
+  @media (min-width: $desktop-width) {
+  .form-title {
+    margin-bottom: 124px;
+  }
+}

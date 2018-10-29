@@ -1,6 +1,20 @@
 .promo {
   position: relative;
   padding: 29px 30px 40px 30px;
+
+  &::after {
+    content: "";
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position-x: 9px;
+    background-size: 320px 100%;
+    opacity: 0.6;
+  }
 }
 
 .promo__title {
@@ -26,20 +40,6 @@
 .promo__wrapper-body {
   display: flex;
   flex-direction: column;
-
-  &::after {
-    content: "";
-    height: 6px;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position-x: 1px;
-    opacity: 0.6;
-  }
 }
 
 .promo__list {
@@ -83,6 +83,12 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding: 35px 50px 75px 49px;
+
+    &::after {
+      bottom: -6px;
+      background-size: 775px 16px;
+      height: 33px;
+    }
   }
 
   .promo__wrapper-header {
@@ -116,13 +122,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    &::after {
-      bottom: 10px;
-      background-size: auto 100%;
-      background-position-x: 10px;
-      height: 16px;
-    }
   }
 
   .promo__left-column {
@@ -149,7 +148,15 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 106px 50px 100px 50px;
+    width: 1050px;
+    padding: 106px 0 100px 0;
+
+    &::after {
+      background-repeat: repeat-x;
+      background-size: 1040px 24px;
+      transform: rotate(180deg);
+      bottom: 11px;
+    }
   }
 
   .promo__wrapper-header {
@@ -178,11 +185,6 @@
 
   .promo__wrapper-body {
     display: flex;
-
-    &::after {
-      background-position-x: 25px;
-      height: 21px;
-    }
   }
 
   .promo__left-column {

@@ -7,10 +7,18 @@
   right: 0;
   bottom: 0;
   width: 100%;
-}
 
-.modal-show {
-  display: block;
+
+  &--show {
+    display: block;
+  }
+
+  &--fix {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
 
 .modal__overlay {
@@ -39,11 +47,12 @@
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid #c6c6c6;
 }
 
 .modal__title {
   margin: 0 auto;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   width: 150px;
   font-size: 25px;
   line-height: 30px;
@@ -54,7 +63,7 @@
 
 .modal__list {
   @include reset-list();
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -62,13 +71,22 @@
 
 .modal__list-label {
   display: block;
-  padding: 15px 30px;
-  width: 80px;
+  width: 81px;
+  padding: 15px 0;
   text-align: center;
   font-size: 17px;
   line-height: 16px;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+  &:active {
+    border-color: $pretty-color;
+  }
 }
 
 .modal__label {
@@ -79,72 +97,47 @@
   text-align: center;
 }
 
-.button.modal__button {
-  color: #ffffff;
-  background-color: $pretty-color;
-  border: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: #59d5bc;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #46c1ae;
-  }
-}
-
-.modal__fix {
-  position: static;
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
+.modal__list-input:checked + .modal__list-label {
+  border: 2px solid $pretty-color;
 }
 
 @media (min-width: $tablet-width) {
   .modal__form {
     width: 568px;
-    padding: 49px 110px;
+    padding: 31px 108px;
+    padding-bottom: 48px;
   }
 
   .modal__title {
-    margin-bottom: 12px;
-    width: 351px;
+    margin-bottom: 15px;
+    width: 355px;
     font-size: 30px;
     line-height: 57px;
   }
 
   .modal__list-label {
-    padding: 16px 55px;
-
-    &:hover {
-      border-color: $pretty-color;
-    }
-  }
-
-  .modal__list-input:checked + .modal__list-label {
-    border: 2px solid $pretty-color;
+    width: 112px;
+    padding: 16px 0;
   }
 
   .modal__label {
     font-size: 17px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal__form {
-    padding: 38px 110px;
-    padding-bottom: 45px;
-  }
-
-  .modal__label {
     margin-bottom: 20px;
   }
-
-  .button.modal__button {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
+
+// @media (min-width: $desktop-width) {
+//   .modal__form {
+//     padding: 38px 110px;
+//     padding-bottom: 45px;
+//   }
+
+//   .modal__label {
+//     margin-bottom: 20px;
+//   }
+
+//   .modal__button {
+//     padding-top: 16px;
+//     padding-bottom: 16px;
+//   }
+// }
