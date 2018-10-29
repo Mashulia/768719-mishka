@@ -39,16 +39,9 @@
   .copyright {
     width: 183px;
     padding: 0;
-    margin-top: 7px;
   }
 
   .copyright__text:active {
     color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    padding-top: 5px;
   }
 }

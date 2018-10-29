@@ -218,8 +218,16 @@
 }
 
 @media (min-width: $desktop-width) {
+    .order-form__filter {
+      padding: 72px 50px 60px 45px;
+
+      &--color {
+        padding: 67px 50px 62px 45px;
+      }
+    }
+
   .order-form__filter-title {
-    padding-top: 5px;
+    padding-top: 0;
     width: 175px;
     text-align: center;
 
@@ -231,11 +239,14 @@
       margin-top: -5px;
       margin-left: -5px;
     }
+
+    &--sublist {
+      margin-top: 5px;
+    }
   }
 
   .order-form__wrapper {
     display: flex;
-    padding: 65px 50px 62px 45px;
   }
 
   .order-form__filter-list {

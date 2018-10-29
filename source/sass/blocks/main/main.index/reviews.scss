@@ -173,10 +173,14 @@
 
     &::after {
       background-repeat: repeat-x;
-      background-size: 1040px 24px;
+      background-size: 1045px 24px;
       transform: rotate(180deg);
-      bottom: 11px;
+      bottom: 2px;
     }
+  }
+
+  .reviews__list {
+    padding-left: 3px;
   }
 
   .reviews__title {
@@ -185,8 +189,11 @@
 
   .reviews__list-text {
     margin-bottom: 38px;
-    width: 750px;
-    padding-left: 2px;
+    width: 775px;
+  }
+
+  .reviews__list-author-name {
+    font-size: 17px;
   }
 
   .reviews__switch {

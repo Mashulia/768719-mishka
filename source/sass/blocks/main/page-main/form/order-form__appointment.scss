@@ -211,6 +211,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form__appointment {
+    padding-top: 64px;
+  }
+
   .order-form__appointment-sublist {
     width: 700px;
     margin-right: 175px;
@@ -240,8 +244,15 @@
       padding-right: 225px;
     }
 
+    &--sublist {
+      padding-left: 45px;
+    }
+
     &--tel {
       padding-top: 67px;
+    }
+    &--e-mail {
+      padding-top: 39px;
     }
   }
 
