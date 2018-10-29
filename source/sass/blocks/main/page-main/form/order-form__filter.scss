@@ -115,9 +115,11 @@
 @media (min-width: $tablet-width) {
   .order-form__filter {
     margin-bottom: 0;
+    padding: 71px 50px 62px 50px;
 
     &--color {
       background-color: #f1f1f1;
+      padding-top: 65px;
     }
   }
 
@@ -125,9 +127,14 @@
     width: 167px;
     margin-bottom: 0;
     padding-right: 0;
+    margin-top: 2px;
 
     &:last-child {
       margin-top: -20px;
+    }
+
+    &--text {
+      margin-top: -5px;
     }
 
     &::after {
@@ -152,12 +159,11 @@
 
   .order-form__wrapper {
     display: flex;
-    padding: 71px 50px 61px 50px;
   }
 
   .order-form__filter-option {
     padding-left: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
     &--color {
       width: 238px;
@@ -169,6 +175,7 @@
   }
 
   .order-form__filter-label {
+    width: 260px;
     font-size: 19px;
   }
 

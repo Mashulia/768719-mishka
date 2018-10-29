@@ -80,7 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-    padding: 77px 50px 137px 50px;
+    padding: 77px 50px 137px 45px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
@@ -94,11 +94,16 @@
       background-size: 780px 16px;
       height: 33px;
       background-repeat: repeat-x;
+      background-position-x: 53px;
     }
   }
 
   .reviews__title {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__list {
+    padding-left: 5px;
   }
 
   .reviews__list-text {
@@ -145,10 +150,10 @@
   }
 
   .reviews__button {
-    width: 180px;
+    width: 175px;
     position: absolute;
     top: 14%;
-    right: 6%;
+    right: 50px;
     padding-right: 21px;
   }
 }

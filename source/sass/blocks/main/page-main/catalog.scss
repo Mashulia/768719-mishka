@@ -79,9 +79,9 @@
   }
 
   .catalog__title {
-    margin-bottom: 8px;
-    width: 208px;
+    margin-bottom: 5px;
     font-size: 20px;
+    padding-right: 49px;
 
     &:hover,
     &:focus {
@@ -95,7 +95,7 @@
 
   .catalog__item {
     display: flex;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
 
     &:hover,
     &:focus {
@@ -119,14 +119,13 @@
 
   .catalog__info {
     width: 334px;
-    padding: 24px;
-    padding-left: 27px;
+    padding: 27px;
     padding-bottom: 0;
   }
 
   .catalog__modal {
     top: 24px;
-    right: 0;
+    right: -3px;
 
     &:hover,
     &:focus {
@@ -140,8 +139,8 @@
   }
 
   .catalog__description {
-    margin-bottom: 154px;
-    font-size: 17px;
+    margin-bottom: 155px;
+    font-size: 15px;
   }
 
   .catalog__price {
