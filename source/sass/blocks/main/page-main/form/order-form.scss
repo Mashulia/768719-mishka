@@ -62,12 +62,12 @@
     width: 500px;
   }
 
-.order-form__input {
-  &--tel,
-  &--letter {
-    background-color: inherit;
+  .order-form__input {
+    &--tel,
+    &--letter {
+      background-color: inherit;
+    }
   }
-}
 
   .order-form__input--tel:hover,
   .order-form__input--tel:focus,
