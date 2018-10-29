@@ -1,3 +1,8 @@
+.order-form {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .order-form__button {
   margin-bottom: 55px;
 }
@@ -5,7 +10,6 @@
 .order-form__description-slogan {
   margin: 0;
   margin-bottom: 24px;
-  padding-right: 78px;
   font-size: 13px;
   font-weight: normal;
 }
@@ -13,7 +17,7 @@
 .order-form__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 40px 13px 0;
+  padding: 13px 40px 14px 0;
   word-break: break-all;
   font: inherit;
   font-size: 17px;

@@ -25,7 +25,7 @@
 }
 
 .reviews__list-item {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .reviews__list-text {
@@ -36,10 +36,11 @@
 }
 
 .reviews__list-author-name {
+  display: block;
   font-size: 17px;
   font-style: normal;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .reviews__list-author-email {

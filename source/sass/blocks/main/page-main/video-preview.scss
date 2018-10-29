@@ -4,15 +4,17 @@
 
 .video-preview__wrapper {
   margin-bottom: 57px;
-  padding-top: 25px;
+  padding-top: 22px;
   border: 1px solid #ececec;
 }
 
 .video-preview__title {
-  width: 130px;
+  @include reset-indents();
   padding-left: 90px;
+  padding-right: 40px;
   margin-bottom: 24px;
-  text-align: center;
+  font-size: 17px;
+  text-align: left;
 }
 
 .video-preview__wrapper-header {
@@ -65,7 +67,7 @@
 }
 
 .video-preview__info {
-  padding: 0 34px;
+  padding: 0 32px;
 }
 
 .video-preview__description {

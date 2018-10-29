@@ -7,7 +7,7 @@
     height: 7px;
     width: 100%;
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     left: 0;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
@@ -23,7 +23,7 @@
 
 .promo__offer {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   font-size: 17px;
   line-height: 20px;
   color: $pretty-color;
@@ -32,7 +32,7 @@
 
 .promo__offer-description {
   @include reset-indents();
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   font-weight: normal;
   width: 249px;
 }

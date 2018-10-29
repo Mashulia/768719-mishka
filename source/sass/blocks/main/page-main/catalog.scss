@@ -3,7 +3,6 @@
   font-size: 17px;
   color: #000000;
   margin-bottom: 5px;
-  width: 193px;
 
   &:hover,
   &:focus {
@@ -17,7 +16,7 @@
 
 .catalog__price {
   position: relative;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 28px;
   border-top: 1px solid #ececec;
 }
@@ -33,7 +32,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   border: 1px solid #ececec;
 }
 
@@ -43,7 +42,7 @@
 }
 
 .catalog__item-image {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .catalog__image {
