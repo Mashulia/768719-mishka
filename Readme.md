@@ -1,3 +1,6 @@
+---
+/build/index.html
+---
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Руднева](https://up.htmlacademy.ru/adaptive/15/user/768719).
